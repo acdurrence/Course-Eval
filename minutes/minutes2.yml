@@ -1,0 +1,14 @@
+date: September 20, 2016
+meeting_type: [TA meeting]
+attendance: [ setireid, aarondur, mwehar]
+absent : [ linnhtwa, tjeiling, minbag]
+excused_absences: [{ minbang, reason: couldn't find a ride to campus after pervious car accident.}
+{linnhtwa, reason: doesn't know the meeting exist. }
+{tjeiling, reason: doesn't know the meeting exist.}]
+task_progress: [{ aarondur, progress: will create Web Form Design for Suubmission}, { setireid, will create skeleton for filling out evaluations}]
+issues: [# waiting for Tom's respond for the meeting, waiting for the base code from Tom and to reach out to all the group members for time and date]
+Notes : # looking over the for the code for the website, Three more meetings before sprint 2 one with the instructor  
+notes : # we created a new branch in the respority the "developer" branch
+notes : # another vedio must be created for sprint 2, everyone must be making commits to the respority
+notes : # everyone will be assign task to finnish for the website
+notes : # possible meeting with tom --the client of the evalaluation website 5pm wednesday
