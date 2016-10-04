@@ -18,6 +18,25 @@
 	<link rel="stylesheet" href="scripts/cl_containers.css">
 	<link rel="stylesheet" href="scripts/baseStyle.css">
 	<script type="text/javascript" src="scripts/uiButtonClicks.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    	<script type="text/javascript">
+		google.charts.load('current', {'packages': ['corechart']});
+		google.charts.setOnLoadCallback(drawChart);
+
+		function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+				["Question", "Rating", {role: 'style'}, {role:'interval'}, {role:'interval'}],
+				["Q1", 4, "color:gold", 3.2, 4.8],
+				["Q2", 3.5, "color:red", 3.2, 3.8],
+				["Q3", 3.0, "color:blue", 2.9, 3.1],
+				["Q4", 4.6, "color:green", 4.7, 4.5],
+				["Q5", 2.8, "color:orange", 3.0, 2.6]
+			]);
+			var options = {'title':'Course Evaluation Ratings'};
+			var chart = new google.visualization.BarChart(document.getElementById('course_chart'));
+			chart.draw(data, options);
+		}
+    	</script>
 </head>
 <body>
 	<header>
@@ -61,10 +80,13 @@
 						<br/><span>Sample Size: 12345 over 123 times taught by 45 faculty.
 						<br/>Green bar indicates University mean and standard deviation. </span>
 					</p>
+					<div id="course_chart"></div>
+					<!--
 					
 						<p id="DRarr">
 							<strong>
 								The course was well organized:<br/>
+							</strong>
 								<svg class="wrap">
 								<svg  version="1.1" class="myBox" x="0" y="0" viewBox="0 0 900 56" width="100%" xmlns="http://www.w3.org/2000/svg">
 									<rect class="mySolid" x="12" y="3" width="60%" height="30" fill="#e59319" fill-opacity="1" stroke="#e59319" stroke-width="3" stroke-opacity="0" />
@@ -79,7 +101,6 @@
 									Sorry, your browser does not support inline SVG.  
 								</svg>
 								</svg>
-							</strong>
 						</p>
 					 
 						<hr class="clear"/> 
@@ -169,7 +190,7 @@
 								</svg>
 							</strong>
 						</p>
-					<p>&nbsp;</p>
+					<p>&nbsp;</p>-->
 				</article>
 		</article>
 		
