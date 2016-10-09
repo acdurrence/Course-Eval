@@ -1,0 +1,13 @@
+date: October 9, 2016 
+time : 5pm
+meeting type: group
+attendance: [ linnhtwa, setireid, minbang, tjeiling, aarondur]
+absent: [ aarondur ]
+excused_absences: [{aarondur: reason: car broke down}]
+task_progress: [ {linnhtwa: chart mark up for page_search}, 
+{tjeiling: chart mark up for page_search and table layout},
+{minbang: page_search under master branch dynamic search},
+{setiried: recent search on page_search},
+{aaron: recent search on page_search} ]
+issues: [ the group is waiting on access to the server ]
+Notes: # minbang will creat the video. Will decide the next task for each member when we have the next TA meeting.
