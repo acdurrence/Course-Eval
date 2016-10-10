@@ -4,16 +4,16 @@ meeting type: group
 attendance: [ linnhtwa, setireid, minbang, tjeiling]
 absent: [ aarondur ]
 excused_absences: [{aarondur: reason: car broke down}]
-task_progress: [ {linnhtwa: chart mark up for page_search}, 
+task_progress: [ {linnhtwa: chart mark up for page_faculty}, 
 {tjeiling: chart mark up for page_search and table layout},
 {minbang: page_search under master branch dynamic search},
 {setiried: recent search on page_search},
 {aaron: recent search on page_search} ]
 issues: [ the group is waiting on access to the server ]
-Notes: # minbang will creat the video. The whole group members will decide the next task for each member when we have the next TA meeting.
-       # tjeiling and linnhtwa discussed about picking one chart mark up and keep all the webpages same chart,
-       # to figure out the webpage layout like all the questions above the chart or mouse hover the chart and question come out
+Notes: # minbang will creat the video. The group members will decide the next task for each member when we have the next TA meeting.
+       # tjeiling and linnhtwa discussed about picking one chart mark up and keeping all the webpages the same,
+       # figure out the webpage layout and all the questions above the chart or mouse hover over the chart and question display box will appear
        # tjeiling suggested having a copy of the master branch on the server for ease of demoing the site to the client and course faculty
-       # seti will looking into creating more serach options and possible extension of the search results.
-       # 
+       # setireid will be creating more search options and possible extensions of the search results.
+       
        
