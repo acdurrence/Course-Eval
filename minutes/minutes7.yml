@@ -1,7 +1,7 @@
 date: October 9, 2016 
 time : 5pm
 meeting type: group
-attendance: [ linnhtwa, setireid, minbang, tjeiling, aarondur]
+attendance: [ linnhtwa, setireid, minbang, tjeiling]
 absent: [ aarondur ]
 excused_absences: [{aarondur: reason: car broke down}]
 task_progress: [ {linnhtwa: chart mark up for page_search}, 
