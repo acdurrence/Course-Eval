@@ -1,0 +1,14 @@
+What we have done
+1. Search page (with search bar, dynaically display results, results are clickable, shows recent searches)
+2. A results page (Histogram and bar chart)
+
+1. Improve search interface.(dropdown Department, autocomplete, search results, 
+2. Take Tom's data into database. (Define our DB tables (Schemas), Convert excel data to CSV and read in data and write to DB.
+3. Toggle between the charts( design changes if necessary) 
+4. Access MySQL database excute the SQL query retun data in plain text the database create php script data lookup.php
+5.
+
+Create accessor. PHP script for data access. (Given instructorID, CourseID, and Semester and return evaluation data. Given instructorID, return all pairs may be in array included [courseId, Semester].
+3. Integrate the database wth the Results page (small design changes if necessary)
+4.
+5.
