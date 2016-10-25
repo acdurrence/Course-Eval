@@ -1,8 +1,12 @@
 <?php
 
-class MergeTools{
+include $_SYSTEM['DOCUMENT_ROOT'] . "/admin_tools/general.php";
 
-	private $pdo;
+class MergeTools extends General{
+
+	public function __construct(){
+		parent::__construct();
+	}
 
 	function mergeInstructors($fileName){
 		$file = fopen($fileName, "r");
