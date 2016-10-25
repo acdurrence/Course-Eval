@@ -1,0 +1,16 @@
+date: October 25, 2016 
+time : 3pm
+meeting type: TA meeting
+attendance: [ setireid, minbang, tjeiling, aarondur, linnhtwa]
+absent: [ none ]
+excused_absences: [ none ]
+task_progress: [ {linnhtwa: will be woking on instructor Acessor, given a instructor what are the return result}, 
+{tjeiling: finish working on the database, just doing some final touches},
+{minbang: will be working on course Acessor, given a course what are the returns results},
+{setiried: will be focusing on the result page for course , what will be display if given one course},
+{aaron: continueing to work on search with drop menu} ]
+issues: [ waiting for reply form Tom, about some questions ]
+Notes: # The meeting this week was to finalize what we are working on, and weather all teammates are heading in the right direction 
+       # minbang and linnhtwa are doing the accessor.
+       # tjeiling finish on the database, doing some final touches
+       # setireid still working on the result page.
