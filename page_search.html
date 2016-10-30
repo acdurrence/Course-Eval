@@ -19,6 +19,7 @@
     <script type="text/javascript" src="scripts/uiButtonClicks.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
     <script>
   $( function() {
     var availableTags = [
@@ -29,6 +30,7 @@
     });
   } );
     </script>
+
     <script>
   $( function() {
     var availableTags = [
@@ -39,6 +41,9 @@
     });
   } );
     </script>
+
+    
+
 </head>
 <body>
     <header>
@@ -73,7 +78,7 @@
                 <p class="logoBoldPositive">
                     Select Department
                     <br />
-                    <select class="dropDown" id="selectDepartment">
+                    <select id="selectDepartment" class="dropDown">
                         <option value="Choose your department">Choose your department</option>
                         <option value="CSE">CSE</option>
                         <option value="MTH">MTH</option>
@@ -81,22 +86,8 @@
                     </select>
                 </p>
                 <hr class="space" />
-                <p class="logoBoldPositive">
-                    Search by Faculty Name
-                    <br />
-                    <label for="searchFaculty">
-                        <input class="btn" id="searchFaculty" type="text" value="First Last">
-                        <button class="Started_Btn" id="searchFaculty" type="button" onMouseUp="doPage('page_result');">FIND</button>&nbsp;
-                </p>
+                <table id="instructors" style="width:75%"></table>
                 <hr class="space" />
-                <p class="logoBoldPositive">
-                    Search by Course ID
-                    <br />
-                    <label for="searchCourse">
-                        <input class="btn" id="searchCourse" type="text" value="ABC123">
-                        <button class="Started_Btn" id="searchCourse" type="button" onMouseUp="doPage('page_result');">FIND</button>&nbsp;
-                </p>
-                <p>&nbsp;</p>
             </article>
         </article>
         <article class="wrap">
@@ -147,6 +138,98 @@
         </div>
         <hr class="clear" />
     </footer>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $("#selectDepartment").on("change", function(){
+        var selected = $(this).val();
+        //$("#instructors").html('<p id="indentDRarr"><a href="#" onMouseUp="doPage(\'page_faculty\');">' + 'hjasksd' + '</a></p>');
+        var cse_prof = ["Jesse Hartloff","Chunming Qiao","Carl Alphonce","Geoffrey Challen","Varun Chandola","Vipin Chaudhary","Karthik Dantu",
+            "Daniel Fischer","Marco Gaboardi","Jing Gao","Xin (Roger) He","Matthew Hertz","Aziz Mohaisen","Hung Ngo","Bina Ramamurthy","Kenneth W. Regan",
+            "Atri Rudra","Kui Ren",]
+        var com_prof = ["Mary B. Cassata","Ivan Dylko","Thomas Hugh Feeley","Mark Frank","Melanie Green","Matthew Grizzard","Junhao Hong","Brian J Reynolds",
+            "Lance Rintamaki","Andrew Sachs","Gregory Saxton","Allison Shaw","Michael A. Stefanone","Kelly Tenzek","Frank E. Tutzauer","Arun Vishwanath",
+            "Hua (Helen) Wang","Joseph Woelfel","Janet Yang"]
+        var mth_prof = ["Bernard Badzioch","Gino Biondini","Robert Busch","Jack Buttcane","Ching Chou","Lewis A. Coburn","Michael Cowen","Thomas Cusick",
+            "Jonathan Dimock","James Faran","Brian Hassard","David Hemmer","Joseph Hundley","James Javor","Jae-Hun Jung","Cagatay Kutluhan","Hanfeng Li",
+            "Xiaoqing Li","Yiqiang Li","Johanna Mangahas","William W. Menasco","Sarah Muldoon","Mohan Ramachandran","John Ringland","Gershon Sageev","Adam Sikora",
+            "Brian Spencer","Li Wang","Jingbo Xia","Xingru Zhang","Hui June Zhu"]
+
+        if(selected == "CSE")
+        {
+            var index = 0
+            var content = ""
+            for(i=0; i<(cse_prof.length/3); i++)
+            {
+                content += "<tr>"
+                for(j=0;j<3;j++)
+                {
+                    if(index < cse_prof.length)
+                    {
+                        content += '<td><p id="indentDRarr"><a href="#" onMouseUp="doPage(\'page_faculty\');">' + cse_prof[index] + '</a></p></td>';
+                        index++
+                    }
+                    else
+                    {
+                        content += '<td></td>'
+                        index++
+                    }
+                }
+                content += "</tr>"
+            }
+            $("#instructors").html(content);
+        }
+        else if(selected == "MTH")
+        {
+            var index = 0
+            var content = ""
+            for(i=0; i<(mth_prof.length/3); i++)
+            {
+                content += "<tr>"
+                for(j=0;j<3;j++)
+                {
+                    if(index < mth_prof.length)
+                    {
+                        content += '<td><p id="indentDRarr"><a href="#" onMouseUp="doPage(\'page_faculty\');">' + mth_prof[index] + '</a></p></td>';
+                        index++
+                    }
+                    else
+                    {
+                        content += '<td></td>'
+                        index++
+                    }
+                }
+                content += "</tr>"
+            }
+            $("#instructors").html(content);
+        }
+        else if(selected == "COM")
+        {
+            var index = 0
+            var content = ""
+            for(i=0; i<(com_prof.length/3); i++)
+            {
+                content += "<tr>"
+                for(j=0;j<3;j++)
+                {
+                    if(index < com_prof.length)
+                    {
+                        content += '<td><p id="indentDRarr"><a href="#" onMouseUp="doPage(\'page_faculty\');">' + com_prof[index] + '</a></p></td>';
+                        index++
+                    }
+                    else
+                    {
+                        content += '<td></td>'
+                        index++
+                    }
+                }
+                content += "</tr>"
+            }
+            $("#instructors").html(content);
+        }
+        })
+    </script>
+    
     >>>>>>> c89bf28fe6bfd8c544ef4ef29b39f06e0471f4fb
 </body>
 <article class="formBack" id="formBack">
