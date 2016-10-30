@@ -1,0 +1,16 @@
+date: October 4, 2016
+time: 3:00 PM
+meeting_type: [instructor meeting]
+attendance: [ setireid, aarondur,linnhtwa, tjeiling, minbang, mwehar]
+absent : [ none ]
+excused_absences: [ none ]
+task_progress: [ 
+{ubit: aarondur, progress: Modified search page to show recent searches. Started work on linking previous results directly to a page}, 
+{ubit: setireid, progress: Modified search page to show recent searches. Started work on toggling between different charts},
+{ubit: minbang, progress: Modified search page to provide dynamic results. Started work on writing an accessors},
+{ubit: tjeiling, progress: Made a demonstration of the question data using a google charts bar chart. Started work on setting up DB and moving Tom's Data into it},
+{ubit: linnhtwa, progress: Made a demonstration of the question data using a google charts histogram. Started work on writing accessors}]
+issues: [{ubit: tjeiling, issue: DB must be set up prior to creation of Accessors}]
+Notes : | 
+Moved to a different table to facilitate use of the whiteboard.
+Got access to hulk.cse.buffalo.edu.
