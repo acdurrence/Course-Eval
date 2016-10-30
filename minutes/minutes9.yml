@@ -1,0 +1,13 @@
+date: October 11, 2016 
+time : 4pm
+meeting type: Group meeting
+attendance: [ linnhtwa, setireid, minbang, tjeiling, aarondur]
+absent: [ none ]
+excused_absences: [{none}]
+task_progress: [ {linnhtwa: result page histrogram}, 
+{tjeiling: result page bar chart},
+{minbang: Search page (with search bar, dynaically display results, results are clickable, shows recent searches)},
+{setiried: search page },
+{aaron: search page} ]
+issues: [ none ]
+Notes: # Group discussed how to support each other to complete the tasks and earn the community point
