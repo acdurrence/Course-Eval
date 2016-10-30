@@ -1,14 +1,18 @@
-What we have done
-1. Search page (with search bar, dynaically display results, results are clickable, shows recent searches)
-2. A results page (Histogram and bar chart)
-
-1. Improve search interface.(dropdown Department, autocomplete, search results, 
-2. Take Tom's data into database. (Define our DB tables (Schemas), Convert excel data to CSV and read in data and write to DB.
-3. Toggle between the charts( design changes if necessary) 
-4. Access MySQL database excute the SQL query retun data in plain text the database create php script data lookup.php
-5.
-
-Create accessor. PHP script for data access. (Given instructorID, CourseID, and Semester and return evaluation data. Given instructorID, return all pairs may be in array included [courseId, Semester].
-3. Integrate the database wth the Results page (small design changes if necessary)
-4.
-5.
+date: October 11, 2016 
+time : 3pm
+meeting type: TA meeting
+attendance: [ linnhtwa, setireid, minbang, tjeiling, aarondur]
+absent: [ none ]
+excused_absences: [{none}]
+task_progress: [ {linnhtwa: result page histrogram}, 
+{tjeiling: result page bar chart},
+{minbang: Search page (with search bar, dynaically display results, results are clickable, shows recent searches)},
+{setiried: search page },
+{aaron: search page} ]
+issues: [ none ]
+Notes: # minbang and linnhtwa will creat the video. Create accessor. PHP script for data access. (Given instructorID, CourseID, and Semester and return evaluation data. Given instructorID, return all pairs may be in array included [courseId, Semester].
+       # tjeiling Take Tom's data into database. (Define our DB tables (Schemas), Convert excel data to CSV and read in data and write to DB.
+       # figure out the webpage layout and all the questions above the chart or mouse hover over the chart and question display box will appear
+       # tjeiling suggested having a copy of the master branch on the server for ease of demoing the site to the client and course faculty
+       # setireid Improve search interface.(dropdown Department, autocomplete, search results
+       # aaron Improve search interface.(dropdown Department, autocomplete, search results.
