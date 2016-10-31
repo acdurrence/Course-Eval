@@ -161,7 +161,6 @@ UB Course Comparison
 	-moz-osx-font-smoothing: grayscale;
 }
 /*
-
 Light UB Blue #809DC4
 Light Indigo #875FAA
 Light Red #EF8860
@@ -178,7 +177,6 @@ Gold #FCA712
 Green #009344
 Blue #1B75BB
 Gray #888A8C
-
 */
 .alertIcon:before,.alertIconMd:before {
 	content: "\e600";
@@ -346,6 +344,8 @@ figure {
 	padding: 10px 0px 14px 0px;
 	background: transparent;
 }
+
+
 /*end set browser feel */
 
  /*reset for mobile browsers */
@@ -1290,6 +1290,19 @@ input.btn{
 	text-decoration:none;
 }
 
+select.dropDown{
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #000000;
+	display:inline-block;
+	height: 18px;
+	font-size: .8em;
+	margin:4px 0px 0px 0px;
+	padding: 1px 6px 1px 6px;
+	text-decoration:none;
+}
+
 .alignRight{
 	float: right;
 }
@@ -1451,7 +1464,6 @@ toggle content areas start
 .columnOne h1.toggle strong{
    	font-family:DINWebRegular "Trebuchet MS", sans-serif;
 }
-
 end toggle content areas
 *****/
 
@@ -1773,6 +1785,19 @@ end svg styles
 	}
 	
 	input.btn{
+		-moz-border-radius:4px;
+		-webkit-border-radius:4px;
+		border-radius:4px;
+		border:1px solid #000000;
+		display:inline-block;
+		height: 30px;
+		font-size: 1em;
+		margin:4px 0px 0px 0px;
+		padding: 4px 12px 4px 6px;
+		text-decoration:none;
+	}
+	
+	select.dropDown{
 		-moz-border-radius:4px;
 		-webkit-border-radius:4px;
 		border-radius:4px;
