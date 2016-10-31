@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<title>[serviceTitle]-[sectionTitle]-[pageTitle]</title>
-
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="art/ubTlcFavicon.ico" type="image/x-icon"> 
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -16,90 +17,134 @@
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="art/ubCEI_HEX_114.png" />
 
 	<link rel="stylesheet" href="scripts/cl_containers.css">
-	<link rel="stylesheet" href="scripts/baseStyle.css">
+	<link rel="stylesheet" href="scripts/baseStyle.css" >
 	<script type="text/javascript" src="scripts/uiButtonClicks.js"></script>
+    
+    
 </head>
-<body>
-	<header>
-		 <article class="ubhead">
-		 	<a href="http://www.buffalo.edu/">
-			 <figure>
-				<img src="art/UB-Reaching-Others_1-line_white.png"  height="25" alt="University at Buffalo, The State University of New York">
-			</figure>
-			 </a>
-		</article>
-	</header><!--close header-->
-	
-	<nav>
-		<p class="buttonLeftOn">Search</p>
-		<p class="buttonLeftOff"><a href="#about" onMouseUp="doPage('page_about');">About</a></p>
-	</nav>
 
-	<div class="main">
-		
-		<article class="wrap">
-			<article class="columnOne"> 
-				  <article class="header">
-					<button class="Started_Btn alignRight" id="logout" type="button" onMouseUp="doPage('page_logout');">Logout</button>
-					<h1>Welcome Victor E Bull</h1>
-				  </article>
-			</article>	
-		</article>
-		<article class="wrap">
-			<article class="columnOne"> 
-					<span id="DRarr"><a href="#search" onMouseUp="doPage('page_search');">Search</a> > <strong>Result</strong></span>
-				</article>
-		</article>
-		<article class="wrap">
-				<article class="columnOne"> 
-						<hr class="space"/>
-						<p class="logoBoldPositive">
-						 	Faculty Matched
-						</p>
-						<p id="indentDRarr"><a href="#" onMouseUp="doPage('page_faculty');">Joe Faculty</a></p>
-						<p id="indentDRarr"><a href="#" onMouseUp="doPage('page_faculty');">Nancy G OodTeach</a></p>
-						<p id="indentDRarr"><a href="#" onMouseUp="doPage('page_faculty');">Marc K Rusty</a></p>
-						<hr class="space"/>
-						<p class="logoBoldPositive">
-						 	Courses Matched
-						</p>
-						<p id="indentDRarr" ><a href="#" onMouseUp="doPage('page_course');">COM 101 - Introduction to Communication Models</a></p>
-						<p id="indentDRarr"><a href="#" onMouseUp="doPage('page_course');">PHY220 - Physical Models</a></p>
-						<p id="indentDRarr"><a href="#" onMouseUp="doPage('page_course');">AE400 - Model Plane Design</a></p>
-						<p id="indentDRarr"><a href="#" onMouseUp="doPage('page_course');">DEN310 - Periodontal Modeling</a></p>
-						<p id="indentDRarr"><a href="#" onMouseUp="doPage('page_course');">ART250 - Business Practice</a></p>
+<body>
+
+<header>
+
+<article class="ubhead">
+<a href="http://www.buffalo.edu/">
+
+<figure>
+<img src="art/UB-Reaching-Others_1-line_white.png"  height="25" alt="University at Buffalo, The State University of New York">
+</figure>
+
+</a>
+
+</article>
+
+</header><!--close header-->
+
+<nav>
+<p class="buttonLeftOn">Search</p>
+<p class="buttonLeftOff"><a href="#about" onMouseUp="doPage('page_about');">About</a></p>
+
+</nav>
+
+
+<div class="main">
+<div id="left" style="width: 450px; height: 500px; float: left; ">
+
+<article class="columnOne"> 
+		<article class="header">
+         <h1>Welcome To Course Evaluation</h1>
+	    </article>
+        <p>&nbsp;</p>
+</article>
+      
+
+<h3>Overall Course Results</h3>
+<p><a href="http://buffalo.edu/ubcei"><strong>Course Title</strong></a></p>
+ 
+<p><a href="http://buffalo.edu/ubcei"><strong>Course Number</strong></a></p>
+ 
+<p><a href="http://buffalo.edu/ubcei"><strong>Course Instructor </strong></a></p> 
+ 
+<p><a href="http://buffalo.edu/ubcei"><strong>Course Statistics</strong></a></p> 
+      
+
+        
+        
+        
+	
 						<p>&nbsp;</p>
-				</article>
-		</article>
+			
 		
-		<article class="wrap">
+		
+		
 			<article class="columnOne"> 
 				  <article class="header">
 					Service opperated by <a href="http://buffalo.edu/ubcei"><strong>Center for Educational Innovation</strong></a> a Division of <a href="http://academicaffairs.buffalo.edu/"><strong>Academic Affairs</strong></a>
 				 </article>
 			</article>
-	   </article>
-	   
-	</div><!--main-->
-	   
-	   <article class="wrapClear">
-	   			<img src="art/whiteSpace.png"  height="100px" alt="...blank space..." />
-	   </article>
+	  
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses', 'Profit'],
+          ['2014', 1000, 400, 200],
+          ['2015', 1170, 460, 250],
+          ['2016', 660, 1120, 300],
+          ['2017', 1030, 540, 350]
+        ]);
+var options = {
+      chart: { title: 'Company Performance',
+            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+          }
+        };
+var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+  
+<div id="columnchart_material" style="width: 450px; height: 300px; float: right; "></div>
+
+
+
+
+		
+</div><!--main-->
+
+<article class="wrapClear">
+<img src="art/whiteSpace.png"  height="100px" alt="...blank space..." />
+</article>
 	
-	<footer class="footer">
-		<div class="service">
-			<span class="logoUltraReverse">Your Opinion Counts</span>
-			<button class="Completed_Btn" id="learnMore" type="button" onMouseUp="doPage('home');">LEARN MORE</button>&nbsp;
-		</div>
-		<hr class="clear"/>
-	</footer>
+<footer class="footer"></footer>
+
 </body>
+
 <article class="formBack" id="formBack">
 	&nbsp;
-</article><article class="formPop" id="formPop">
-		<div class="formField" id="formField">field</div>
 </article>
+    
+<article class="formPop" id="formPop">
+<div class="formField" id="formField">field</div>
+</article>
+
 <article class="formBack" id="formBackb">
 	&nbsp;
 </article>
-</html>
+  
