@@ -75,30 +75,29 @@
   <div class="w3-conta">
     <h5>Questions</h5>
   </div>
-  <p> <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'London')">London</a></p>
-  <p><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Paris')">Paris</a></p>
-  <p><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Tokyo')">Tokyo</a></p>
+  <p> <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'London')">1-2</a></p>
+  <p><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Paris')">3-4</a></p>
+  <p><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Tokyo')">5-6</a></p>
 </nav>
 
 <div style="margin-left:130px; height: 150px">
  
 
   <div id="London" class="w3-container city">
-    <h2>London</h2>
-    <p>London is the capital city of England.</p>
-    <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+<p>Overall, this course was: (Very poor, Poor, Fair, Good or Excellent)</p>
+<p>The course was well organized</p>
+
   </div>
 
   <div id="Paris" class="w3-container city">
-    <h2>Paris</h2>
-    <p>Paris is the capital of France.</p>
-    <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+    <p>The course was intellectually challenging and stimulating</p>
+    <p>The work load in the course was reasonable and appropriate</p>
   </div>
 
   <div id="Tokyo" class="w3-container city">
-    <h2>Tokyo</h2>
-    <p>Tokyo is the capital of Japan.</p>
-    <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+<p>Methods of evaluating student work were fair and appropriate</p>
+<p>The course content (assignments, readings, lectures, etc.) helped me meet the learning expectations set forth by the instructor></p>
+
   </div>
 
 </div>
@@ -148,43 +147,65 @@ function openCity(evt, cityName) {
 			</article>
 	  
 
+</div>
+<div id="columnchart_material" style="width: 350px; height: 150px; float: right; ">
+<p>Q1</p>
 
+          <div class="w3-progress-container w3-round-xlarge w3-small">
 
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:40%">
 
+              <div class="w3-center w3-text-white">40%</div>
 
+            </div>
+
+          </div>
+
+          
+
+          
+
+          <p>Q2</p>
+
+          <div class="w3-progress-container w3-round-xlarge w3-small">
+
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:30%">
+
+              <div class="w3-center w3-text-white">30%</div>
+
+            </div>
+
+          </div>
+
+                 <p>Q3</p>
+
+           <div class="w3-progress-container w3-round-xlarge w3-small">
+
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:90%">
+
+              <div class="w3-center w3-text-white">90%</div>
+
+            </div>
+
+          </div>
+
+        
+
+    <p>Q4</p>
+
+          <div class="w3-progress-container w3-round-xlarge w3-small">
+
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:25%">
+
+              <div class="w3-center w3-text-white">25%</div>
+
+            </div>
+
+          </div>   
 
 
 
 </div>
-
-
-
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses', 'Profit'],
-          ['2014', 1000, 400, 200],
-          ['2015', 1170, 460, 250],
-          ['2016', 660, 1120, 300],
-          ['2017', 1030, 540, 350]
-        ]);
-var options = {
-      chart: { title: 'Company Performance',
-            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
-          }
-        };
-var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
-
-        chart.draw(data, options);
-      }
-    </script>
-  </head>
-  <body>
-  
-<div id="columnchart_material" style="width: 450px; height: 300px; float: right; "></div>
 
 
 
