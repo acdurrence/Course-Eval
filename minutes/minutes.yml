@@ -2,5 +2,5 @@ date: September 13, 2016
 meeting_type: initial meeting with ta and four members
 attendance: [linnhtwa, setireid, tjeiling, minbang, mwehar]
 absent : [aarondur]
-excused_absences: [{ubit: aarondur, :reason: car won't start.}]
+excused_absences: [{ubit: aarondur, :reason: car won't start}]
 task_progress: [{ubit: minbang, progress: will post youtube vide}, {ubit: linnhtwa, progress: will handle the meeting notes}]
