@@ -1,0 +1,84 @@
+
+
+.rightdiv
+{
+    width: 436px;
+    height: 319px;
+    float: right;
+    border: 3px dotted blue;
+}
+
+.leftdiv
+{
+    width: 503px;
+    height: 319px;
+    float: left;
+    border: 3px dotted red;
+}
+
+#title_0
+{
+    border: 3px dotted black;
+    position: inherit;
+    font-style: italic;
+}
+
+#course
+{
+    border: 3px dotted green;
+    text-align: center;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+tr
+{
+    border: none;
+}
+
+.td1_t
+{
+    text-align: center;
+}
+
+.td2_t
+{
+    border-left: solid 1px #f00;
+    text-align: center;
+    white-space: nowrap;
+    padding-left: 31px;
+    padding-right: 31px;
+}
+
+.td3_t
+{
+    text-align: center;
+    border-left: solid 1px #f00;
+}
+
+/*   Bottom */
+
+.td1_B
+{
+    
+    padding-left: 11px;
+    white-space: nowrap;
+}
+
+.td2_B
+{
+    border-left: solid 1px #f00;
+    text-align: center;
+    padding-left: 31px;
+    padding-right: 31px;
+}
+
+.td3_B
+{
+    border-left: solid 1px #f00;
+    text-align: center;
+}
+
