@@ -11,7 +11,7 @@
 .leftdiv
 {
     width: 503px;
-    height: 583px;
+    height: 452px;
     float: left;
     border: 3px dotted red;
 }
@@ -82,63 +82,47 @@ tr
     text-align: center;
     padding-left: 12px;
 }
-
 .second
 {
-    border: 3px dotted black;
-    height: 84px;
-    margin-left: 521px;
-}
 
+
+
+    border: 3px dotted black;
+
+}
 .bottom
 {
-    border: 3px dotted yellow;
-    height: 175px;
-    margin-left: 520px;
-    margin-top: 324px;
+   border: 3px dotted yellow;
+   float: bottom;
+
+
+
 }
 
-.tabs
-{
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    background: #2c3e50;
-    border-bottom: 5px #e67e22 solid;
-}
 
-.tabs li
-{
-    display: inline-block;
-    margin: 0;
-    padding: 10px 20px 5px 20px;
-    cursor: pointer;
-    font-size: 1.2em;
-    line-height: 2em;
-    color: #FFF;
-}
 
-.tabs li:hover
-{
-    background-color: #134dcb;
-}
 
-.tabs li.current
-{
-    background: #e67e22;
-    color: #FFF;
-}
 
-.tab-content
-{
-    display: none;
-    background: #ededed;
-    padding: 15px;
-    line-height: 1.4;
-}
 
-.tab-content.current
-{
-    display: inherit;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
