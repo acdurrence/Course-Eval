@@ -1,14 +1,12 @@
-date: October 27, 2016 
-time : 4pm
+date: November 7, 2016 
+time : 3pm
 meeting type: Group meeting
 attendance: [ setireid, minbang, tjeiling, aarondur, linnhtwa]
-absent: [ none ]
-excused_absences: [ none ]
-task_progress: [ {linnhtwa: will be woking on instructor Acessor, given a instructor what are the return result}, 
-{tjeiling: finish working on the database, just doing some final touches},
-{minbang: will be working on course Acessor, given a course what are the returns results},
-{setiried: will be focusing on the result page for course , what will be display if given one course},
-{aaron: continueing to work on search with drop menu} ]
-issues: [ waiting for reply form Tom, about some questions ]
-Notes: # The group was checking each other task and complete the group task.
-        #the group also discussed about the upcoming presentation
+absent: [ aarondur, linnhtwa ]
+excused_absences: [ linnhtwa Milltary Treaning, aarondur  haveing roommate issues  ]
+task_progress: [ {linnhtwa: need to show her progress on the instructor Acessor, given a instructor what are the return result}, 
+{tjeiling: finish working on the datebase, waiting on next meeting for next task},
+{minbang: Finish with course Acessor, waiting on next meeting for next task probably will be working on add the Acessor the result page},
+{setiried: will still be working on the result page },
+{aaron: finnish adding dropdown box to the search page, waiting on next meeting for next task } ]
+issues: [ setireid didn't complete his last task, will be given till next meeting to do so ]
