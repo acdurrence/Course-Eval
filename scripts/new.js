@@ -1,23 +1,28 @@
-   google.load("visualization", "1", {packages:["corechart"]});
-   google.setOnLoadCallback(drawChart);
-   function drawChart() {
-    // Create and populate the data table.
-    var data = google.visualization.arrayToDataTable([
-      ['Flavour', 'Percent'],
-      ['Apple', 17.36],
-      ['Strawberry Rhubarb', 15.62],
-      ['Pumpkin', 13.63],
-      ['Cherry', 11.25],
-      ['Blueberry', 7.53],
-      ['Lemon Meringue', 6.45],
-      ['Chocolate', 3.97],
-      ['Chess', 1.46],
-      ['Other', 7.09]
-    ]);
-    var options = {
-      title: 'What is your favorite pie flavor?'
-    };
-     // Create and draw the visualization.
-    new google.visualization.LineChart(
-      document.getElementById('chart')).draw(data, options);
-}
+$(document).ready(function(){
+    // For horizontal bar charts, x an y values must will be "flipped"
+    // from their vertical bar counterpart.
+    var plot2 = $.jqplot('chart2', [
+        [[2,1], [4,2], [6,3], [3,4]], 
+        [[5,1], [1,2], [3,3], [4,4]], 
+        [[4,1], [7,2], [1,3], [2,4]]], {
+        seriesDefaults: {
+            renderer:$.jqplot.BarRenderer,
+            // Show point labels to the right ('e'ast) of each bar.
+            // edgeTolerance of -15 allows labels flow outside the grid
+            // up to 15 pixels.  If they flow out more than that, they 
+            // will be hidden.
+            pointLabels: { show: true, location: 'e', edgeTolerance: -15 },
+            // Rotate the bar shadow as if bar is lit from top right.
+            shadowAngle: 135,
+            // Here's where we tell the chart it is oriented horizontally.
+            rendererOptions: {
+                barDirection: 'horizontal'
+            }
+        },
+        axes: {
+            yaxis: {
+                renderer: $.jqplot.CategoryAxisRenderer
+            }
+        }
+    });
+});
