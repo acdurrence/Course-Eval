@@ -8,7 +8,7 @@
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    -moz-box-shadow: 0 4px 2px #d1d1d1;
+    -moz-box-shadow: 0 1px 2px #d1d1d1;
     -webkit-box-shadow: 0 1px 2px #d1d1d1;
     box-shadow: 0 1px 2px #d1d1d1;
 }
@@ -91,6 +91,7 @@ tr
     margin-left: 523px;
     margin-right: 0px;
     padding-right: 6px;
+  
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -113,7 +114,7 @@ tr
     list-style: none;
     background: #2c3e50;
     border-bottom: 5px #e67e22 solid;
-    color: #3426a9;
+    color: #34a926;
 }
 
 .tabs li

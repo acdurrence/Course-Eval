@@ -5,12 +5,7 @@
     width: 419px;
     height: 319px;
     float: right;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    -moz-box-shadow: 0 4px 2px #d1d1d1;
-    -webkit-box-shadow: 0 1px 2px #d1d1d1;
-    box-shadow: 0 1px 2px #d1d1d1;
+    border: 3px dotted blue;
 }
 
 .leftdiv
@@ -18,16 +13,19 @@
     width: 503px;
     height: 583px;
     float: left;
+    border: 3px dotted red;
 }
 
 #title_0
 {
+    border: 3px dotted black;
     position: inherit;
     font-style: italic;
 }
 
 #course
 {
+    border: 3px dotted green;
     text-align: center;
 }
 
@@ -87,20 +85,14 @@ tr
 
 .second
 {
+    border: 3px dotted black;
     height: 84px;
-    margin-left: 523px;
-    margin-right: 0px;
-    padding-right: 6px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    -moz-box-shadow: 0 1px 2px #d1d1d1;
-    -webkit-box-shadow: 0 1px 2px #d1d1d1;
-    box-shadow: 0 1px 2px #d1d1d1;
+    margin-left: 521px;
 }
 
 .bottom
 {
+    border: 3px dotted yellow;
     height: 175px;
     margin-left: 520px;
     margin-top: 324px;
@@ -113,7 +105,6 @@ tr
     list-style: none;
     background: #2c3e50;
     border-bottom: 5px #e67e22 solid;
-    color: #3426a9;
 }
 
 .tabs li
@@ -134,7 +125,7 @@ tr
 
 .tabs li.current
 {
-    background: #e67e2b;
+    background: #e67e22;
     color: #FFF;
 }
 
@@ -198,6 +189,7 @@ table th {
 	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
 	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
 }
+
 
 table th:first-child
 {

@@ -46,15 +46,15 @@
                 <h6 id="course"> Course Evaluation </h6>
                 <table>
                     <tr>
-                        <td class="td1_t"><b>Course Title </b></td>
+                        <td class="td1_t">Course Title </td>
                         <td class="td2_t">Course Number</td>
                         <td class="td3_t">Course Instructor</td>
                     </tr>
                     <tr>
                         <td class="td1_B">Software Engering</td>
-                        <td class="td2_B">442</td>
+                        <td class="td2_B">458554</td>
                         <td class="td3_B">
-                            <a href="page_faculty.html">Jess Hartloff</a>
+                            <a href="page_faculty.html">Frank Guanafafaffag</a>
                         </td>
                     </tr>
                 </table>
@@ -75,39 +75,43 @@
             <div class="second"> 
                 <!--Second-->                 
                 <ul class="tabs">
-                    <li class="tab" data-tab="tab-1">Fall 2016</li>
+                    <li class="tab current" data-tab="tab-1">Fall 2016</li>
                     <li class="tab" data-tab="tab-2">All Years</li>
-                    <li class="tab" data-tab="tab-2">Graph</li>
+               
                 </ul>
             </div>
-            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-            <script type="text/javascript">
-      google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Questions', 'Strongly Agree', ' Agree', 'Neutral','Disagree','Strongly Disagree'],
-          ['Q1', 1000, 400, 200,145,45],
-          ['Q2', 1170, 460, 250,89,78],
-          ['Q3', 660, 1120, 300,150,45],
-          ['Q4', 1030, 540, 350,145,88],
-          ['Q4', 1030, 540, 350,100,77],
-          ['Q4', 1030, 540, 350,145,88],
-          ['Q3', 660, 120, 300,150,45]
-        ]);
-
-        var options = {
-          chart: {
-            title: 'Course Evaluation'
-         
-          }
-        };
-
-        var chart = new google.charts.Bar(document.getElementById('chart2'));
-
-        chart.draw(data, options);
-      }
-    </script>             
+            <script>        
+                $(document).ready(function(){
+    // For horizontal bar charts, x an y values must will be "flipped"
+    // from their vertical bar counterpart.
+    var plot2 = $.jqplot('chart2', [
+        [[2,1], [4,2], [6,3], [3,4]], 
+        [[5,1], [1,2], [3,3], [9,4]], 
+        [[5,1], [1,2], [3,3], [9,4]], 
+        [[5,1], [1,2], [3,3], [9,4]], 
+        [[4,1], [7,2], [1,3], [2,4]]], {
+        seriesDefaults: {
+            renderer:$.jqplot.BarRenderer,
+            // Show point labels to the right ('e'ast) of each bar.
+            // edgeTolerance of -15 allows labels flow outside the grid
+            // up to 15 pixels.  If they flow out more than that, they 
+            // will be hidden.
+            pointLabels: { show: false, location: 'e', edgeTolerance: -15 },
+            // Rotate the bar shadow as if bar is lit from top right.
+            shadowAngle: 170,
+            // Here's where we tell the chart it is oriented horizontally.
+            rendererOptions: {
+                barDirection: 'horizontal'
+            }
+        },
+        axes: {
+            yaxis: {
+                renderer: $.jqplot.CategoryAxisRenderer
+            }
+        }
+    });
+});
+                </script>             
             <div id="chart2" class="rightdiv">
 </div>             
             <div class="bottom">
