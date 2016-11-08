@@ -26,3 +26,24 @@ var chart = new google.charts.Bar(document.getElementById('columnchart_material'
   
   
     <link rel="stylesheet" href="scripts/new.css"> 
+
+
+
+$('#graph-bars').hide();
+
+$('#lines').on('click', function (e) {
+	$('#bars').removeClass('active');
+	$('#graph-bars').fadeOut();
+	$(this).addClass('active');
+	$('#graph-lines').fadeIn();
+	e.preventDefault();
+});
+
+$('#bars').on('click', function (e) {
+	$('#lines').removeClass('active');
+	$('#graph-lines').fadeOut();
+	$(this).addClass('active');
+	$('#graph-bars').fadeIn().removeClass('hidden');
+	e.preventDefault();
+});
+
