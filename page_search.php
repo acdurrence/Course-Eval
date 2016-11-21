@@ -208,19 +208,19 @@ $subjects = $sub->fetchAll();
 
             $("#searchTab").on("click", function () {
                 if ($("#selectSearch").val() === "1") {
-                    window.open("/Course_Eval/page_course.html?id=" + $("#selectInstruct").val());
+                    window.open("/Course_Eval/page_course.php?id=" + $("#selectInstruct").val());
                 }
                 else {
-                    window.open("/Course_Eval/page_result.html?id=" + $("#selectInstruct").val());
+                    window.open("/Course_Eval/page_result.php?id=" + $("#selectInstruct").val());
                 }
             });
 
             $("#searchHere").on("click", function () {
                 if ($("#selectSearch").val() === "1") {
-                    window.open("/Course_Eval/page_course.html?id=" + $("#selectInstruct").val(), "_self");
+                    window.open("/Course_Eval/page_course.php?id=" + $("#selectInstruct").val(), "_self");
                 }
                 else {
-                    window.open("/Course_Eval/page_result.html?id=" + $("#selectInstruct").val(), "_self");
+                    window.open("/Course_Eval/page_result.php?id=" + $("#selectInstruct").val(), "_self");
                 }
             });
 
