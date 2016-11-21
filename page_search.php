@@ -98,7 +98,7 @@ $subjects = $sub->fetchAll();
                             <p class="logoBoldPositive">
                                 Select Subject
                                 <br />
-                                <select id="selectSubject" class="dropDown">
+                                <select id="selectSubject">
                                     <option value="" selected="selected">Choose your subject</option>
                                     <?php foreach ($subjects AS $subject) { ?>
                                         <option value="<?php echo $subject[0]; ?>"><?php echo $subject[0] ?></option>
@@ -111,14 +111,16 @@ $subjects = $sub->fetchAll();
                                 <p class="logoBoldPositive">
                                     Select <span id='instructLabel'>Instructor</span>
                                     <br />
-                                    <select id="selectInstruct" class="dropDown">
+                                    <select id="selectInstruct">
                                         <option value="" selected="selected">Choose your instructor</option>
                                     </select>
                                 </p>
                             </div>
                             <div class="col-sm-3">
-                                <button type='button' class='btn btn-success' id='searchTab' title="Search on a new tab">Search New Tab</button>
-                                <button type='button' class='btn btn-primary' id='searchHere' title='Search on this page'>Search Here</button>
+                                <div class='btn-group'>
+                                    <button type='button' class='btn btn-success' id='searchTab' title="Search on a new tab">Search New Tab</button>
+                                    <button type='button' class='btn btn-primary' id='searchHere' title='Search on this page'>Search Here</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -174,55 +176,55 @@ $subjects = $sub->fetchAll();
         </footer>
 
         <script>
-                    $("#selectSubject").select2();
-                    $("#selectInstruct").select2();
-                    $("#selectSubject").on("change", function () {
-                        if ($(this).val() === "") {
-                            $("#moreSearch").hide();
-                        }
-                        else {
-                            var data = $.param({action: "subject_instruct", subject: $("#selectSubject").val(), searchType: $("#selectSearch").val()});
-                            $.ajax({url: "/Course_Eval/ajax.search.php", datatype: "json", data: data, success: function (profs) {
-                                    var searchType = $("#selectSearch").val();
-                                    $("#selectInstruct").empty();
-                                    $("#selectInstruct").append("<option value='' selected='selected'>Choose your instructor</option>");
-                                    for (var i = 0, len = profs.length; i < len; ++i) {
-                                        var courseNumber = searchType === "1" ? profs[i][2] + " - " : "";
-                                        $("#selectInstruct").append("<option value='" + profs[i][1] + "' selected='selected'>" + courseNumber + profs[i][0] + "</option>");
-                                    }
-                                    $("#moreSearch").show();
-                                }
-                            });
+            $("#selectSubject").select2();
+            $("#selectInstruct").select2();
+            $("#selectSubject").on("change", function () {
+                if ($(this).val() === "") {
+                    $("#moreSearch").hide();
+                }
+                else {
+                    var data = $.param({action: "subject_instruct", subject: $("#selectSubject").val(), searchType: $("#selectSearch").val()});
+                    $.ajax({url: "/Course_Eval/ajax.search.php", datatype: "json", data: data, success: function (profs) {
+                            var searchType = $("#selectSearch").val();
+                            $("#selectInstruct").empty();
+                            $("#selectInstruct").append("<option value='' selected='selected'>Choose your instructor</option>");
+                            for (var i = 0, len = profs.length; i < len; ++i) {
+                                var courseNumber = searchType === "1" ? profs[i][2] + " - " : "";
+                                $("#selectInstruct").append("<option value='" + profs[i][1] + "' selected='selected'>" + courseNumber + profs[i][0] + "</option>");
+                            }
+                            $("#moreSearch").show();
                         }
                     });
+                }
+            });
 
-                    $("#selectSearch").on("change", function () {
-                        $("#selectSubject").val("").trigger("change");
-                        if ($(this).val() === "1") {
-                            $("#instructLabel").text("Course");
-                        }
-                        else {
-                            $("#instructLabel").text("Instructor");
-                        }
-                    });
+            $("#selectSearch").on("change", function () {
+                $("#selectSubject").val("").trigger("change");
+                if ($(this).val() === "1") {
+                    $("#instructLabel").text("Course");
+                }
+                else {
+                    $("#instructLabel").text("Instructor");
+                }
+            });
 
-                    $("#searchTab").on("click", function () {
-                        if ($("#selectSearch").val() === "1") {
-                            window.open("/Course_Eval/page_course.html?id=" + $("#selectInstruct").val());
-                        }
-                        else {
-                            window.open("/Course_Eval/page_result.html?id=" + $("#selectInstruct").val());
-                        }
-                    });
+            $("#searchTab").on("click", function () {
+                if ($("#selectSearch").val() === "1") {
+                    window.open("/Course_Eval/page_course.html?id=" + $("#selectInstruct").val());
+                }
+                else {
+                    window.open("/Course_Eval/page_result.html?id=" + $("#selectInstruct").val());
+                }
+            });
 
-                    $("#searchHere").on("click", function () {
-                        if ($("#selectSearch").val() === "1") {
-                            window.open("/Course_Eval/page_course.html?id=" + $("#selectInstruct").val(), "_self");
-                        }
-                        else {
-                            window.open("/Course_Eval/page_result.html?id=" + $("#selectInstruct").val(), "_self");
-                        }
-                    });
+            $("#searchHere").on("click", function () {
+                if ($("#selectSearch").val() === "1") {
+                    window.open("/Course_Eval/page_course.html?id=" + $("#selectInstruct").val(), "_self");
+                }
+                else {
+                    window.open("/Course_Eval/page_result.html?id=" + $("#selectInstruct").val(), "_self");
+                }
+            });
 
         </script>
 
