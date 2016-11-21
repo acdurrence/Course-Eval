@@ -83,8 +83,8 @@ $subjects = $sub->fetchAll();
             <article class="wrap">
                 <article class="columnOne">
                     <hr class="space" />
-                    <div class="container">
-                        <div class="col-sm-3">
+                    <div class="container-fluid">
+                        <div class="col-sm-1">
                             <p class="logoBoldPositive">
                                 Select Search Type
                                 <br />
@@ -94,7 +94,7 @@ $subjects = $sub->fetchAll();
                                 </select>
                             </p>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-2">
                             <p class="logoBoldPositive">
                                 Select Subject
                                 <br />
@@ -107,7 +107,7 @@ $subjects = $sub->fetchAll();
                             </p>
                         </div>
                         <div id="moreSearch" hidden="true">
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <p class="logoBoldPositive">
                                     Select <span id='instructLabel'>Instructor</span>
                                     <br />
