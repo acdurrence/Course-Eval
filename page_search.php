@@ -84,7 +84,7 @@ $subjects = $sub->fetchAll();
                 <article class="columnOne">
                     <hr class="space" />
                     <div class="container-fluid">
-                        <div class="col-sm-1">
+                        <div class="col-sm-2">
                             <p class="logoBoldPositive">
                                 Select Search Type
                                 <br />
