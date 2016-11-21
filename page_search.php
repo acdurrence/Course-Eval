@@ -23,13 +23,15 @@ $subjects = $sub->fetchAll();
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="art/ubCEI_HEX_114.png" />
         <link rel="stylesheet" href="scripts/cl_containers.css">
         <link rel="stylesheet" href="scripts/baseStyle.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script type="text/javascript" src="scripts/uiButtonClicks.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
         <script>
             $(function () {
                 var availableTags = [
@@ -81,8 +83,8 @@ $subjects = $sub->fetchAll();
             <article class="wrap">
                 <article class="columnOne">
                     <hr class="space" />
-                    <div class="container">
-                        <div class="col-sm-3">
+                    <div class="container-fluid">
+                        <div class="col-sm-2">
                             <p class="logoBoldPositive">
                                 Select Search Type
                                 <br />
@@ -92,11 +94,11 @@ $subjects = $sub->fetchAll();
                                 </select>
                             </p>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-2">
                             <p class="logoBoldPositive">
                                 Select Subject
                                 <br />
-                                <select id="selectSubject" class="dropDown">
+                                <select id="selectSubject" class='dropDown'>
                                     <option value="" selected="selected">Choose your subject</option>
                                     <?php foreach ($subjects AS $subject) { ?>
                                         <option value="<?php echo $subject[0]; ?>"><?php echo $subject[0] ?></option>
@@ -105,11 +107,11 @@ $subjects = $sub->fetchAll();
                             </p>
                         </div>
                         <div id="moreSearch" hidden="true">
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <p class="logoBoldPositive">
                                     Select <span id='instructLabel'>Instructor</span>
                                     <br />
-                                    <select id="selectInstruct" class="dropDown">
+                                    <select id="selectInstruct" class='dropDown'>
                                         <option value="" selected="selected">Choose your instructor</option>
                                     </select>
                                 </p>
@@ -171,57 +173,56 @@ $subjects = $sub->fetchAll();
             <hr class="clear" />
         </footer>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>
-                    $("#selectSubject").select2();
-                    $("#selectInstruct").select2();
-                    $("#selectSubject").on("change", function () {
-                        if ($(this).val() === "") {
-                            $("#moreSearch").hide();
-                        }
-                        else {
-                            var data = $.param({action: "subject_instruct", subject: $("#selectSubject").val(), searchType: $("#selectSearch").val()});
-                            $.ajax({url: "/Course_Eval/ajax.search.php", datatype: "json", data: data, success: function (profs) {
-                                    var searchType = $("#selectSearch").val();
-                                    $("#selectInstruct").empty();
-                                    $("#selectInstruct").append("<option value='' selected='selected'>Choose your instructor</option>");
-                                    for (var i = 0, len = profs.length; i < len; ++i) {
-                                        var courseNumber = searchType === "1" ? profs[i][2] + " - " : "";
-                                        $("#selectInstruct").append("<option value='" + profs[i][1] + "' selected='selected'>" + courseNumber + profs[i][0] + "</option>");
-                                    }
-                                    $("#moreSearch").show();
-                                }
-                            });
+            $("#selectSubject").select2();
+            $("#selectInstruct").select2();
+            $("#selectSubject").on("change", function () {
+                if ($(this).val() === "") {
+                    $("#moreSearch").hide();
+                }
+                else {
+                    var data = $.param({action: "subject_instruct", subject: $("#selectSubject").val(), searchType: $("#selectSearch").val()});
+                    $.ajax({url: "/Course_Eval/ajax.search.php", datatype: "json", data: data, success: function (profs) {
+                            var searchType = $("#selectSearch").val();
+                            $("#selectInstruct").empty();
+                            $("#selectInstruct").append("<option value='' selected='selected'>Choose your instructor</option>");
+                            for (var i = 0, len = profs.length; i < len; ++i) {
+                                var courseNumber = searchType === "1" ? profs[i][2] + " - " : "";
+                                $("#selectInstruct").append("<option value='" + profs[i][1] + "' selected='selected'>" + courseNumber + profs[i][0] + "</option>");
+                            }
+                            $("#moreSearch").show();
                         }
                     });
+                }
+            });
 
-                    $("#selectSearch").on("change", function () {
-                        $("#selectSubject").val("").trigger("change");
-                        if ($(this).val() === "1") {
-                            $("#instructLabel").text("Course");
-                        }
-                        else {
-                            $("#instructLabel").text("Instructor");
-                        }
-                    });
+            $("#selectSearch").on("change", function () {
+                $("#selectSubject").val("").trigger("change");
+                if ($(this).val() === "1") {
+                    $("#instructLabel").html("Course");
+                }
+                else {
+                    $("#instructLabel").html("Instructor");
+                }
+            });
 
-                    $("#searchTab").on("click", function () {
-                        if ($("#selectSearch").val() === "1") {
-                            window.open("/Course_Eval/page_course.html?id=" + $("#selectInstruct").val());
-                        }
-                        else {
-                            window.open("/Course_Eval/page_result.html?id=" + $("#selectInstruct").val());
-                        }
-                    });
+            $("#searchTab").on("click", function () {
+                if ($("#selectSearch").val() === "1") {
+                    window.open("/Course_Eval/page_course.php?id=" + $("#selectInstruct").val());
+                }
+                else {
+                    window.open("/Course_Eval/page_result.php?id=" + $("#selectInstruct").val());
+                }
+            });
 
-                    $("#searchHere").on("click", function () {
-                        if ($("#selectSearch").val() === "1") {
-                            window.open("/Course_Eval/page_course.html?id=" + $("#selectInstruct").val(), "_self");
-                        }
-                        else {
-                            window.open("/Course_Eval/page_result.html?id=" + $("#selectInstruct").val(), "_self");
-                        }
-                    });
+            $("#searchHere").on("click", function () {
+                if ($("#selectSearch").val() === "1") {
+                    window.open("/Course_Eval/page_course.php?id=" + $("#selectInstruct").val(), "_self");
+                }
+                else {
+                    window.open("/Course_Eval/page_result.php?id=" + $("#selectInstruct").val(), "_self");
+                }
+            });
 
         </script>
 
