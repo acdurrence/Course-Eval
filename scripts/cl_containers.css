@@ -395,7 +395,7 @@ Rotate headers
     /* Magic Numbers */
     translate(25px, 51px)
     /* 45 is really 360 - 45 */
-    -ms-transform: rotate(270deg); /* IE 9 */
+    -ms-transform rotate(270deg); /* IE 9 */
     -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
     transform: rotate(270deg);
     width: 30px;

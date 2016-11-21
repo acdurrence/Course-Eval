@@ -868,7 +868,7 @@ Start Planning
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
 	background-position: 0px 25px;
-    margin-bottom 10px;
+    margin-bottom: 10px;
     width: 100%;
 }
 
@@ -886,7 +886,7 @@ end planning
 	padding: 2px 0px 0px 0px;
 	margin: 0px;
 	/*/*font-family:DINWebLight, "Trebuchet MS", sans-serif;*/
-	border-bottom: 1px solid #000000;*/
+	border-bottom: 1px solid #000000;
 	clear: both;
 }
 .body .header {
@@ -901,14 +901,14 @@ end planning
 }
 .body .data, .body p .data, .body article p .data {
 	font-size: .8em;
-	line-height: 1.em;
+	line-height: 1em;
 	float: left;
 	font-family:DINWebLight, "Trebuchet MS", sans-serif;
 	margin:  0px 15px 0px 0px;
 }
 .body p .dataStrong, .body article p .dataStrong {
 	font-size: .9em;
-	line-height: 1.em;
+	line-height: 1em;
 	float: left;
 	font-family:DINWebBold, "Trebuchet MS", sans-serif;
 	margin:  0px 15px 0px 0px;
@@ -919,7 +919,7 @@ end planning
 .body strong, .body article strong, .body article p strong {
 	float: left;
 	font-size: .9em;
-	line-height: 1.em;
+	line-height: 1em;
 	margin:  0px 5px 0px 0px;
 	padding: 0px;
 }
@@ -934,7 +934,7 @@ end planning
 .body article p, .body p {
 	float: left;
 	font-size: .8em;
-	line-height: 1.em;
+	line-height: 1em;
 	font-family:DINWebLight, "Trebuchet MS", sans-serif;
 	clear: both;
 }
@@ -954,7 +954,7 @@ end planning
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
 	background-position: 0px 25px;
-    margin-bottom 10px;
+    margin-bottom: 10px;
     width: 100%;
     clear: both;
 }
@@ -1198,7 +1198,7 @@ nav span{
 	text-decoration: none;
 	font-family:DINWebRegular, "Trebuchet MS", sans-serif;
 	margin: 0px;
-	padding: 5px 15px 5px; 5px;
+	padding: 5px 15px 5px;
 	background-color: #C4C5C6;
 	border-bottom: 2px solid #C4C5C6;
 	height: 25px;
@@ -1216,7 +1216,7 @@ nav span{
 	color: #000000;
 	font-family:DINWebBold, "Trebuchet MS", sans-serif;
 	margin: 0px 5px 0px 0px;
-	padding: 5px 15px 5px; 5px;
+	padding: 5px 15px 5px;
 	background-color: #ffffff;
 	border-bottom: 2px solid #ffffff;
 	height: 25px;
@@ -1238,7 +1238,7 @@ nav span{
 	text-decoration: none;
 	font-family:DINWebRegular, "Trebuchet MS", sans-serif;
 	margin: 0px;
-	padding: 5px 15px 5px; 5px;
+	padding: 5px 15px 5px;
 	background-color: #C4C5C6;
 	border-bottom: 2px solid #C4C5C6;
 	height: 25px;
@@ -1256,7 +1256,7 @@ nav span{
 	color: #000000;
 	font-family:DINWebBold, "Trebuchet MS", sans-serif;
 	margin: 0px 5px 0px 0px;
-	padding: 5px 15px 5px; 5px;
+	padding: 5px 15px 5px;
 	background-color: #ffffff;
 	border-bottom: 2px solid #ffffff;
 	height: 25px;
@@ -1526,7 +1526,7 @@ hr.clear{
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
 	background-position: 0px 25px;
-    margin-bottom 10px;
+    margin-bottom: 10px;
     width: 100%;
 	clear: both;
 }
@@ -1757,14 +1757,14 @@ end svg styles
 	.buttonLeftOff{
 		font-size: 1.2em;
 		height: 60px;
-		padding: 5px 15px 5px; 5px;
+		padding: 5px 15px 5px;
 		background-color: #C4C5C6;
 		border-bottom: 2px solid #C4C5C6;
 	}
 	.buttonLeftOn{
 		font-size: 1.2em;
 		height: 60px;
-		padding: 5px 15px 5px; 5px;
+		padding: 5px 15px 5px;
 		background-color: #ffffff;
 		border-bottom: 2px solid #ffffff;
 	}
