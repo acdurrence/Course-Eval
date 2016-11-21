@@ -109,7 +109,7 @@ $subjects = $sub->fetchAll();
                         <div id="moreSearch" hidden="true">
                             <div class="col-sm-3">
                                 <p class="logoBoldPositive">
-                                    Select <span id='instructLabel'><b>Instructor</b></span>
+                                    Select <span id='instructLabel'>Instructor</span>
                                     <br />
                                     <select id="selectInstruct" class='dropDown'>
                                         <option value="" selected="selected">Choose your instructor</option>
@@ -199,10 +199,10 @@ $subjects = $sub->fetchAll();
             $("#selectSearch").on("change", function () {
                 $("#selectSubject").val("").trigger("change");
                 if ($(this).val() === "1") {
-                    $("#instructLabel").html("<b>Course</b>");
+                    $("#instructLabel").html("Course");
                 }
                 else {
-                    $("#instructLabel").html("<b>Instructor</b>");
+                    $("#instructLabel").html("Instructor");
                 }
             });
 
