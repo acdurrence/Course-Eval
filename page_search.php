@@ -98,7 +98,7 @@ $subjects = $sub->fetchAll();
                             <p class="logoBoldPositive">
                                 Select Subject
                                 <br />
-                                <select id="selectSubject">
+                                <select id="selectSubject" class='dropDown'>
                                     <option value="" selected="selected">Choose your subject</option>
                                     <?php foreach ($subjects AS $subject) { ?>
                                         <option value="<?php echo $subject[0]; ?>"><?php echo $subject[0] ?></option>
@@ -109,18 +109,16 @@ $subjects = $sub->fetchAll();
                         <div id="moreSearch" hidden="true">
                             <div class="col-sm-3">
                                 <p class="logoBoldPositive">
-                                    Select <span id='instructLabel'>Instructor</span>
+                                    Select <span id='instructLabel'><b>Instructor</b></span>
                                     <br />
-                                    <select id="selectInstruct">
+                                    <select id="selectInstruct" class='dropDown'>
                                         <option value="" selected="selected">Choose your instructor</option>
                                     </select>
                                 </p>
                             </div>
                             <div class="col-sm-3">
-                                <div class='btn-group'>
-                                    <button type='button' class='btn btn-success' id='searchTab' title="Search on a new tab">Search New Tab</button>
-                                    <button type='button' class='btn btn-primary' id='searchHere' title='Search on this page'>Search Here</button>
-                                </div>
+                                <button type='button' class='btn btn-success' id='searchTab' title="Search on a new tab">Search New Tab</button>
+                                <button type='button' class='btn btn-primary' id='searchHere' title='Search on this page'>Search Here</button>
                             </div>
                         </div>
                     </div>
@@ -201,10 +199,10 @@ $subjects = $sub->fetchAll();
             $("#selectSearch").on("change", function () {
                 $("#selectSubject").val("").trigger("change");
                 if ($(this).val() === "1") {
-                    $("#instructLabel").text("Course");
+                    $("#instructLabel").html("<b>Course</b>");
                 }
                 else {
-                    $("#instructLabel").text("Instructor");
+                    $("#instructLabel").html("<b>Instructor</b>");
                 }
             });
 
