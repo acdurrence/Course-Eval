@@ -1296,8 +1296,8 @@ select.dropDown{
 	border-radius:4px;
 	border:1px solid #000000;
 	display:inline-block;
-	height: 30px;
-	font-size: 1em;
+	height: 18px;
+	font-size: .8em;
 	margin:4px 0px 0px 0px;
 	padding: 1px 6px 1px 6px;
 	text-decoration:none;
