@@ -1043,9 +1043,7 @@ end planning
     padding: 2px 0px 0px 0px;
     margin: 0px;
     *font-family: DINWebLight, "Trebuchet MS", sans-serif;
-    */
 	border-bottom: 1px solid #000000;
-    */
 	clear: both;
 }
 
@@ -1063,7 +1061,7 @@ end planning
 .body .data, .body p .data, .body article p .data
 {
     font-size: .8em;
-    line-height: 1.em;
+    line-height: 1.0em;
     float: left;
     font-family: DINWebLight, "Trebuchet MS", sans-serif;
     margin: 0px 15px 0px 0px;
@@ -1072,7 +1070,7 @@ end planning
 .body p .dataStrong, .body article p .dataStrong
 {
     font-size: .9em;
-    line-height: 1.em;
+    line-height: 1.0em;
     float: left;
     font-family: DINWebBold, "Trebuchet MS", sans-serif;
     margin: 0px 15px 0px 0px;
