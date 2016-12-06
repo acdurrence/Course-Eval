@@ -1,0 +1,13 @@
+date: Nov 29, 2016 
+time : 3pm
+meeting type: TA meeting
+attendance: [ setireid, minbang, tjeiling, linnhtwa, aarondur, mwher]
+absent: [ setireid ]
+excused_absences: [ setireid : court hearing ]
+task_progress: [ {linnhtwa: done the front end for the result page}, 
+{tjeiling: finished working on the database},
+{minbang: gave the link to setireid to link between front end and back end},
+{setiried: made a link from back end from front end},
+{aaron: will continue to work on result page after the personal issues solved} ]
+issues: [ none ]
+Notes: #TA checked for everyone tasks completion for sprint 4 and assigned new tasks to the group members for sprint 5. 
