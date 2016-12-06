@@ -1,0 +1,2347 @@
+
+
+/********
+UB Course Comparison
+*********/
+
+/*@media only screen and (min-width: 769px){	*/
+
+main,.main
+{
+    max-width: 970px;
+    min-width: 970px;
+    padding: 1em;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.8);
+    overflow: auto;
+    padding-bottom: 20px;
+    clear: both;
+}
+
+/*}*/
+
+/*start web fonts*/
+
+@font-face{
+	font-family:'DINWebRegular';
+	src:url(../fonts/DINWeb.eot);
+	src: url(../fonts/DINWeb.eot?#iefix)  format('embedded-opentype'),
+	url(../fonts/DINWeb.woff) format('woff'),
+	url(../fonts/dinpro-regular-webfont.ttf) format('truetype'),
+	url(../fonts/dinpro-regular-webfont.svg#webfontvugT94qN) format('svg');
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:'DINWebLight';
+	src:url(../fonts/DINWeb-Light.eot);
+	src: url(../fonts/DINWeb-Light.eot?#iefix)  format('embedded-opentype'),
+	url(../fonts/DINWeb-Light.woff) format('woff'),
+	url(../fonts/dinpro-light-webfont.ttf) format('truetype'),
+	url(../fonts/dinpro-light-webfont.svg#webfontaaHewQlQ) format('svg');
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:'DINWebBold';
+	src:url(../fonts/DINWeb-Bold.eot);
+	src: url(../fonts/DINWeb-Bold.eot?#iefix)  format('embedded-opentype'),
+	url(../fonts/DINWeb-Bold.woff) format('woff'),
+	url(../fonts/dinpro-bold-webfont.ttf) format('truetype'),
+	url(../fonts/dinpro-bold-webfont.svg#webfontOQQc9qcQ) format('svg');
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:'FrutWebUltBold';
+	src:url(../fonts/FrutigerLTStd-UltraBlack.eot);
+	src: url(../fonts/FrutigerLTStd-UltraBlack.eot?#iefix)  format('embedded-opentype'),
+	url(../fonts/FrutigerLTStd-UltraBlack.woff) format('woff'),
+	url(../fonts/FrutigerLTStd-UltraBlack.ttf) format('truetype'),
+	url(../fonts/FrutigerLTStd-UltraBlack.svg) format('svg');
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:'FrutWebBold';
+	src:url(../fonts/FrutigerLTStd-Bold.eot);
+	src: url(../fonts/FrutigerLTStd-Bold.eot?#iefix)  format('embedded-opentype'),
+	url(../fonts/FrutigerLTStd-Bold.woff) format('woff'),
+	url(../fonts/FrutigerLTStd-Bold.ttf) format('truetype'),
+	url(../fonts/FrutigerLTStd-Bold.svg) format('svg');
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:'FrutWebReg';
+	src:url(../fonts/FrutigerLTStd-Roman.eot);
+	src: url(../fonts/FrutigerLTStd-Roman.eot?#iefix)  format('embedded-opentype'),
+	url(../fonts/FrutigerLTStd-Roman.woff) format('woff'),
+	url(../fonts/FrutigerLTStd-Roman.ttf) format('truetype'),
+	url(../fonts/FrutigerLTStd-Roman.svg) format('svg');
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:'FrutWebLight';
+	src:url(../fonts/FrutigerLTStd-Light.eot);
+	src: url(../fonts/FrutigerLTStd-Light.eot?#iefix)  format('embedded-opentype'),
+	url(../fonts/FrutigerLTStd-Light.woff) format('woff'),
+	url(../fonts/FrutigerLTStd-Light.ttf) format('truetype'),
+	url(../fonts/FrutigerLTStd-Light.svg) format('svg');
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:'ubcms';
+	src:url(../fonts/ubcms.eot);
+	src:url(../fonts/ubcms.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/ubcms.woff) format('woff'),
+	url(../fonts/ubcms.ttf) format('truetype'),
+	url(../fonts/ubcms.svg) format('svg');
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family: 'icons';
+	src:url('../fonts/icons.eot?-rkbqs5');
+	src:url('../fonts/icons.eot?#iefix-rkbqs5') format('embedded-opentype'),
+		url('../fonts/icons.woff?-rkbqs5') format('woff'),
+		url('../fonts/icons.ttf?-rkbqs5') format('truetype'),
+		url('../fonts/icons.svg?-rkbqs5#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class$="Icon"]
+{
+    float: right;
+    margin-right: .1em;
+    font-family: 'icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 1.1em;
+    line-height: 1em;
+    cursor: pointer;
+    background-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class$="IconLg"]
+{
+    font-family: 'icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 1.4em;
+    line-height: 1em;
+    cursor: pointer;
+    background-color: transparent;
+    margin-left: .1em;
+    margin-right: .1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class$="IconMd"]
+{
+    font-family: 'icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 1em;
+    line-height: 1em;
+    cursor: pointer;
+    background-color: transparent;
+    margin-left: .1em;
+    margin-right: .1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+Light UB Blue #809DC4
+Light Indigo #875FAA
+Light Red #EF8860
+Light Orange #EF8860
+Light Gold #F7C077
+Light Green #50AD78
+Light Blue #f16521
+Light Gray #C4C5C6
+UB Blue #2A348C
+Indigo #652C90
+Red #C62430
+Orange #F16521
+Gold #FCA712
+Green #009344
+Blue #1B75BB
+Gray #888A8C
+*/
+
+.alertIcon:before,.alertIconMd:before
+{
+    content: "\e600";
+    color: #C62430;
+}
+
+.atIcon:before
+{
+    content: "\e601";
+}
+
+.bracketIcon:before
+{
+    content: "\e602";
+}
+
+.bubbleIcon:before,.bubbleIconLg:before
+{
+    content: "\e603";
+    color: #888A8C;
+}
+
+.captureIcon:before
+{
+    content: "\e604";
+}
+
+.checkIcon:before
+{
+    content: "\e605";
+}
+
+.closeBoxIcon:before
+{
+    content: "\e606";
+}
+
+.closeIcon:before
+{
+    content: "\e607";
+}
+
+.codeIcon:before
+{
+    content: "\e608";
+    color: #666666;
+}
+
+.commentIcon:before
+{
+    content: "\e609";
+    color: #666666;
+}
+
+.editIcon:before,.editIconLg:before
+{
+    content: "\e60a";
+    color: #58ACFA;
+}
+
+.filmIcon:before
+{
+    content: "\e60b";
+}
+
+.findIcon:before
+{
+    content: "\e60c";
+}
+
+.hashIcon:before, .hashIconLg:before
+{
+    content: "\e60d";
+}
+
+.helpIcon:before,.helpIconLg:before
+{
+    content: "\e60e";
+    color: #58ACFA;
+    background-color: transparent;
+}
+
+.imageIcon:before
+{
+    content: "\e60f";
+}
+
+.minusIcon:before, .minusIconLg:before
+{
+    content: "\e610";
+    color: #58ACFA;
+}
+
+.noteIcon:before
+{
+    content: "\e611";
+}
+
+.notIcon:before, .notIconLg:before
+{
+    content: "\e612";
+    color: #888A8C;
+}
+
+.numEightIcon:before
+{
+    content: "\e613";
+    color: #58ACFA;
+}
+
+.numFiveIcon:before
+{
+    content: "\e614";
+    color: #58ACFA;
+}
+
+.numFourIcon:before,.numFourIconLg:before
+{
+    content: "\e615";
+    color: #009344;
+    background-color: transparent;
+}
+
+.numNineIcon:before
+{
+    content: "\e616";
+    color: #58ACFA;
+}
+
+.numOneIcon:before,.numOneIconLg:before
+{
+    content: "\e617";
+    color: #FCA712;
+}
+
+.numSevenIcon:before
+{
+    content: "\e618";
+    color: #58ACFA;
+}
+
+.numSixIcon:before
+{
+    content: "\e619";
+    color: #58ACFA;
+}
+
+.numThreeIcon:before,.numThreeIconLg:before
+{
+    content: "\e61a";
+    color: #1B75BB;
+}
+
+.numTwoIcon:before,.numTwoIconLg:before
+{
+    content: "\e61b";
+    color: #652C90;
+}
+
+.numZeroIcon:before,.numZeroIconLg:before
+{
+    content: "\e61c";
+    color: #888A8C;
+}
+
+.openIcon:before,.openIconLg:before
+{
+    content: "\e61d";
+    color: #888A8C;
+}
+
+.plusIcon:before, .plusIconLg:before
+{
+    content: "\e61e";
+    color: #58ACFA;
+}
+
+.textIcon:before
+{
+    content: "\e61f";
+}
+
+/*end web fonts*/
+
+/*set browser feel*/
+
+body
+{
+    font-family: DINWebLight;
+    font-size: 100%;
+    background: #ffffff;
+    padding: 0px 0px 0px 0px;
+    margin: 0px auto 0px auto;
+    background-image: url(../art/body-bg-rptr_blueDark.png);
+    background-repeat: repeat-x;
+    background-color: #e4f0fe;
+}
+
+header,.header
+{
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    background-color: #041a9b;
+    border-bottom: 1px solid #ffffff;
+}
+
+.ubhead
+{
+    width: 100%;
+}
+
+figure
+{
+    width: 970px;
+    min-width: 970px;
+    height: 28px;
+    margin: 0px auto 0px auto;
+    padding: 10px 10px 14px 20px;
+    background-color: #041a9b;
+    border: none;
+}
+
+.unitLogo
+{
+    width: 900px;
+    height: 28px;
+    margin: 0px auto 0px auto;
+    padding: 10px 0px 14px 0px;
+    background: transparent;
+}
+
+/*end set browser feel */
+
+/*reset for mobile browsers */
+
+h1,h2,h3,h4,h5,h6,p,strong,svg
+{
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-shadow: 0 0 0;
+}
+
+h1
+{
+    font-size: .9em;
+    margin: 0px;
+    padding: 2px 0px 0px 0px;
+    font-family: DINWebBold, "Trebuchet MS", sans-serif;
+}
+
+h1.header
+{
+    background-color: #E0E0E0;
+    padding: 4px 0px 4px 4px;
+    border-top: 1px solid #000000;
+}
+
+h1.headerBlue
+{
+    background-color: #CDE6FF;
+    padding: 4px 0px 4px 4px;
+    border-bottom: 1px solid #ffffff;
+}
+
+dl
+{
+    margin: 0;
+    font-size: .8em;
+}
+
+dt {
+	float: left;
+	margin: 0px 0px 5px 0px;
+	padding: 0;
+	padding: 2px 5px 0px 5px;font-family:DINWebRegular, "Trebuchet MS", sans-serif;
+	clear: both;
+}
+
+dd {
+	float: left;
+	margin: 0px 0px 5px 0px;
+	padding: 0;
+	padding: 2px 5px 0px 10px;font-family:DINWebLight, "Trebuchet MS", sans-serif;
+}
+
+p {	
+	font-size: .8em;
+	margin: 0px;
+	margin: 0px 0px 4px 0px;
+	padding: 2px 0px 2px 0px;
+   	font-family:DINWebRegular, "Trebuchet MS", sans-serif;
+}
+
+span
+{
+    font-size: .8em;
+    margin: 0px 0px 0px -5px;
+    padding: 2px 0px 0px 0px;
+    font-family: DINWebRegular, "Trebuchet MS", sans-serif;
+}
+
+strong
+{
+    font-size: .9em;
+    font-family: DINWebBold, "Trebuchet MS", sans-serif;
+}
+
+a:link
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover
+{
+    text-decoration: none;
+    color: #444444;
+    background-color: #fbc465;
+}
+
+a:visited
+{
+    text-decoration: none;
+    color: #888888;
+}
+
+/*
+.help{
+	display block;
+	background-image:url(art/helpIcon15.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+	margin-left: 5px;
+}
+.edit{
+	border: 1px solid #000000;
+	background-image:url(art/editIconS15.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 25px;
+	margin-left: 5px;
+}
+#fileDisplayArea {
+  margin-top: 2em;
+  width: 100%;
+  overflow-x: auto;
+}
+*/
+
+img
+{
+    max-width: 100%;
+    border: none;
+}
+
+.wrap
+{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #000000;
+    clear: both;
+}
+
+.wrapBlue
+{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #CDE6FF;
+    border-bottom: 1px solid #000000;
+    clear: both;
+}
+
+.wrapClear
+{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: none;
+    clear: both;
+}
+
+.wrap .wrap
+{
+    border-bottom: 0px solid #000000;
+}
+
+.wrapBlue .wrap
+{
+    border-bottom: 0px solid #000000;
+}
+
+.wrap .wrapBlue
+{
+    border-bottom: 0px solid #000000;
+}
+
+.noteAbove, .noteBelow
+{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px 0px 5px 0px;
+    background-color: #ffffff;
+    clear: both;
+    border-bottom: 1px solid #000000;
+}
+
+.noteBelow
+{
+    padding: 0px 0px 2px 0px;
+}
+
+.columnOne
+{
+    float: left;
+    width: 99%;
+    min-width: 99%;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    border-top: 1pt solid #000000;
+    clear: both;
+}
+
+.columnOne .header
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    padding: 5px;
+    background-color: #CDE6FF;
+    border: 0px;
+}
+
+.columnOne .headerGray
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 10px 0px 0px 0px;
+    padding: 5px;
+    background-color: #CCCCCC;
+    border: 1pt solid #CCCCCC;
+}
+
+.columnOne .headerBox
+{
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    padding: 5px;
+    background-color: #FFFFFF;
+    border: 1pt solid #CCCCCC;
+}
+
+.collapsed
+{
+    display: none;
+}
+
+.expanded
+{
+    display: block;
+}
+
+.columnOne article
+{
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.columnOne p
+{
+    padding-left: 10px;
+    text-indent: 0px;
+}
+
+.columnOne  p.head
+{
+    font-size: .8em;
+    font-family: DINWebBold, "Trebuchet MS", sans-serif;
+}
+
+.columnOne  ul
+{
+    margin-left: 20px;
+    padding-left: 10px;
+    text-indent: 0px;
+    font-size: .8em;
+    font-family: DINWebLight, "Trebuchet MS", sans-serif;
+}
+
+.columnOne p.planning
+{
+    padding-left: 120px;
+    text-indent: -90px;
+}
+
+.columnOne p.planning strong
+{
+    padding-right: 18px;
+}
+
+.columnOne #toggle
+{
+    display: block;
+    margin: 0px 0px 0px 0px;
+    padding-left: 14px;
+    background-image: url(../art/doubleArrowOrange_right.png);
+    background-repeat: no-repeat;
+    background-position: 0px 8px;
+    background-size: 10px 10px;
+}
+
+.columnOne .linkTo
+{
+    display: block;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 20px;
+    background-color: transparent;
+    background-image: url(../art/dottedArrowOrange.png);
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+    background-size: 15px 8px;
+}
+
+.columnOne #pageItem-container strong
+{
+    padding-right: 0px;
+}
+
+.columnOne a:link
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.columnOne a:hover
+{
+    text-decoration: none;
+    color: #f47108;
+}
+
+.columnOne a:visited
+{
+    text-decoration: none;
+    color: #993c1c;
+}
+
+.columnThree
+{
+    float: left;
+    width: 33%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #CDE6FF;
+}
+
+.columnThree .header
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    padding: 5px;
+    background-color: #CDE6FF;
+    border: 0px;
+}
+
+.columnThree article
+{
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+.columnFour
+{
+    float: left;
+    width: 24%;
+    margin: 0px;
+    padding: 0px 5px 0px 0px;
+    background-color: #CDE6FF;
+}
+
+.columnFour .header
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    padding: 5px;
+    background-color: #CDE6FF;
+    border: 0px;
+}
+
+.columnFour article
+{
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+.columnFour article .bullet
+{
+    font-size: .75em;
+}
+
+.columnFive
+{
+    float: left;
+    width: 20%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+}
+
+.columnFive .header
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 5px;
+    background-color: transparent;
+    border: 0px;
+}
+
+.columnFive .header h1
+{
+}
+
+.columnFive article
+{
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 5px 5px 5px;
+    background-color: transparent;
+}
+
+.columnFive article p
+{
+    float: left;
+    width: 80%;
+    margin: 0px;
+    padding: 0px;
+    text-indent: 5px;
+    background-color: transparent;
+}
+
+.columnFive article p.hang
+{
+    float: left;
+    width: 80%;
+    margin: 0px 0px 0px 6px;
+    padding: 0px 0px 0px 6px;
+    text-indent: -12px;
+    background-color: transparent;
+}
+
+.columnFive article p.hang strong
+{
+    margin: 0px 10px 0px 0px;
+}
+
+.columnFive .editIcon, .columnFive .hashIcon, .columnFive .bubbleIcon,.columnFive .numOneIcon,.columnFive .numTwoIcon,.columnFive .numThreeIcon,.columnFive .numFourIcon
+{
+    float: right;
+    clear: right;
+    position: top;
+    padding-right: 8px;
+}
+
+.columnSix
+{
+    float: left;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    background-color: #CDE6FF;
+}
+
+.columnSix .header
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    padding: 5px;
+    background-color: transparent;
+    border: 0px;
+}
+
+.columnSix .header p
+{
+}
+
+.columnSix article
+{
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 0px;
+}
+
+.wrap .columnOne .wrap .columnSix
+{
+    float: left;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrap .columnOne .wrap .columnSix p.head
+{
+    background-color: #CDE6FF;
+    padding: 8px;
+    border-right: 1px solid #ffffff;
+}
+
+.wrap .columnOne .wrap .columnSix p
+{
+    border-right: 1px solid #e0e0e0;
+}
+
+/**************
+Start Planning
+**************/
+
+.planning
+{
+    display: block;
+    width: 100%;
+    padding: 2px 0px 0px 0px;
+    margin: 0px;
+    clear: both;
+}
+
+.planning .header
+{
+    float: left;
+    width: 15%;
+    height: auto;
+    margin: 0px;
+    padding: 0px 5px 5px 5px;
+    background-color: transparent;
+    border: 0px;
+}
+
+.planning span
+{
+    margin: 0px 5px 0px 0px;
+}
+
+.planning .data
+{
+    float: left;
+}
+
+.planning .editIcon, .planning .hashIcon
+{
+    float: left;
+}
+
+.planning strong
+{
+    float: left;
+    margin: 0px 5px 0px 0px;
+}
+
+.planning .header p
+{
+    float: left;
+    width: 95%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+}
+
+.planning article p
+{
+    float: left;
+    width: 95%;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    background-color: transparent;
+}
+
+.planning  article
+{
+    float: left;
+    width: 75%;
+    height: auto;
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+}
+
+.planning article hr, .columnOne article hr {
+	border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	background-position: 0px 25px;
+    margin-bottom 10px;
+    width: 100%;
+}
+
+/*************
+end planning
+*************/
+
+.body
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 2px 0px 0px 0px;
+    margin: 0px;
+    *font-family: DINWebLight, "Trebuchet MS", sans-serif;
+    */
+	border-bottom: 1px solid #000000;
+    */
+	clear: both;
+}
+
+.body .header
+{
+    float: left;
+    width: 30%;
+    height: auto;
+    margin: 0px;
+    padding: 0px 5px 5px 5px;
+    background-color: transparent;
+    border: 0px;
+}
+
+.body .data, .body p .data, .body article p .data
+{
+    font-size: .8em;
+    line-height: 1.em;
+    float: left;
+    font-family: DINWebLight, "Trebuchet MS", sans-serif;
+    margin: 0px 15px 0px 0px;
+}
+
+.body p .dataStrong, .body article p .dataStrong
+{
+    font-size: .9em;
+    line-height: 1.em;
+    float: left;
+    font-family: DINWebBold, "Trebuchet MS", sans-serif;
+    margin: 0px 15px 0px 0px;
+}
+
+.body .editIcon, .body .hashIcon
+{
+    float: left;
+}
+
+.body strong, .body article strong, .body article p strong
+{
+    float: left;
+    font-size: .9em;
+    line-height: 1.em;
+    margin: 0px 5px 0px 0px;
+    padding: 0px;
+}
+
+.body .header p
+{
+    float: left;
+    width: 95%;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+}
+
+.body article p, .body p
+{
+    float: left;
+    font-size: .8em;
+    line-height: 1.em;
+    font-family: DINWebLight, "Trebuchet MS", sans-serif;
+    clear: both;
+}
+
+.body  article
+{
+    float: left;
+    width: 60%;
+    height: auto;
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+}
+
+.body article hr {
+	border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	background-position: 0px 25px;
+    margin-bottom 10px;
+    width: 100%;
+    clear: both;
+}
+
+.bullet
+{
+    padding-left: 20px;
+    background-image: url(../art/dottedArrowOrange.png);
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+    background-size: 25%;
+}
+
+p.bullet
+{
+    padding-left: 14px;
+    background-image: url(../art/dottedArrowOrange.png);
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+    background-size: 25%;
+}
+
+.formBack
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: gray;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.formPop
+{
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    background-color: white;
+    overflow: auto;
+}
+
+.formBack
+{
+    display: none;
+}
+
+.formPop
+{
+    display: none;
+}
+
+.formField span
+{
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+.formField span .formError
+{
+    width: 80%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    font-family: DINWebLight, "Trebuchet MS", sans-serif;
+}
+
+.formField
+{
+    width: 80%;
+    height: 80%;
+    margin: 0px auto 0px auto;
+    padding-top: 20px;
+    font-size: .8em;
+}
+
+.formField h1,.formError h1
+{
+    width: 90%;
+    margin: 0px;
+    padding: 0px;
+    font-family: DINWebBold, "Trebuchet MS", sans-serif;
+}
+
+.formField p,.formError p
+{
+    width: 90%;
+    margin: 0px 0px 4px 0px;
+    padding: 0px;
+    font-family: DINWebLight, "Trebuchet MS", sans-serif;
+}
+
+.formField p strong,.formError p strong
+{
+    width: 90%;
+    margin: 0px 5px 0px 0px;
+    padding: 0px 5px 0px 0px;
+    font-family: DINWebRegular, "Trebuchet MS", sans-serif;
+    font-size: .8em;
+}
+
+.formField p.hang
+{
+    width: 90%;
+    margin: 0px 0px 0px 18px;
+    padding: 0px 0px 0px 18px;
+    text-indent: -36px;
+    font-family: DINWebLight, "Trebuchet MS", sans-serif;
+}
+
+/*
+input[type=text],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=color],
+input[type=email]
+*/
+
+.formField input[type=text]
+{
+    width: 80%;
+}
+
+.formField textarea
+{
+    width: 90%;
+    height: 200px;
+}
+
+.formField hr
+{
+    width: 90%;
+    margin: 10px 0px 10px 0px;
+}
+
+.service
+{
+    width: 970px;
+    min-width: 970px;
+    margin: 0px auto 2px auto;
+    padding: 10px 0px 14px 10px;
+}
+
+.service a:link, .service a:visited, .service a:hover
+{
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.floatLeft
+{
+    float: left;
+}
+
+.logoBoldPositive
+{
+    font-size: 1em;
+    color: #000000;
+    font-family: DINWebBold, "Trebuchet MS", sans-serif;
+    margin: 0px;
+    margin-right: .5em;
+    padding: 0px 0px 0px 0px;
+}
+
+.logoBoldShaded
+{
+    font-size: 2em;
+    color: #041a9b;
+    font-family: DINWebBold, "Trebuchet MS", sans-serif;
+    text-shadow: 0.1em 0.1em 0.2em #777777;
+    margin: 0px;
+    margin-right: .5em;
+    padding: 0px 0px 0px 0px;
+}
+
+.logoLightShaded
+{
+    font-size: 2em;
+    color: #041a9b;
+    font-family: DINWebLight, "Trebuchet MS", sans-serif;
+    text-shadow: 0.1em 0.1em 0.2em #777777;
+    margin: 0px;
+    margin-right: .5em;
+    padding: 0px;
+}
+
+.logoBoldTinted
+{
+    font-size: 2em;
+    color: #ffffff;
+    font-family: FrutWebUltBold, "Trebuchet MS", sans-serif;
+    text-shadow: 0.1em 0.1em 0.2em #777777;
+    margin: 0px;
+    margin-right: .5em;
+    padding: 0px 0px 0px 0px;
+}
+
+.logoLightTinted
+{
+    font-size: 2em;
+    color: #ffffff;
+    font-family: FrutWebLight, "Trebuchet MS", sans-serif;
+    text-shadow: 0.1em 0.1em 0.2em #777777;
+    margin: 0px;
+    margin-right: .5em;
+    padding: 0px;
+}
+
+.logoUltraReverse
+{
+    font-size: 1em;
+    color: #ffffff;
+    font-family: FrutWebUltBold, "Trebuchet MS", sans-serif;
+    margin: 0px;
+    margin-right: .8em;
+    padding: 0px 0px 0px 0px;
+}
+
+.logoBoldReverse
+{
+    font-size: 1em;
+    color: #ffffff;
+    font-family: DINWebBold, "Trebuchet MS", sans-serif;
+    margin: 0px;
+    margin-right: .5em;
+    padding: 0px 0px 0px 0px;
+}
+
+.logoLightReverse
+{
+    font-size: 1em;
+    color: #ffffff;
+    font-family: DINWebLight, "Trebuchet MS", sans-serif;
+    margin: 0px;
+    margin-right: .5em;
+    padding: 0px 0px 0px 0px;
+}
+
+.stagePositive
+{
+    color: #041a9b;
+    font-size: 1em;
+    margin: 0px;
+    padding: 2px 0px 2px 0px;
+}
+
+.stageReverse
+{
+    color: #ffffff;
+    font-size: .7em;
+    margin: 0px;
+    padding: 2px 0px 2px 0px;
+}
+
+.service span.stageReverse
+{
+    clear: both;
+    padding: 2px 10px 2px 0px;
+}
+
+figure.article
+{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+nav
+{
+    background-color: transparent;
+    width: 950px;
+    margin: 10px auto 0px auto;
+    padding: 0px;
+    height: 26px;
+}
+
+nav p
+{
+    vertical-align: middle;
+    text-align: center;
+}
+
+nav span
+{
+    background-color: #C4C5C6;
+    vertical-align: middle;
+    height: 25px;
+    cursor: auto;
+}
+
+.buttonLeftOff a:link,.buttonLeftOff a:visited
+{
+    float: left;
+    color: #777A7C;
+    text-decoration: none;
+    font-family: DINWebRegular, "Trebuchet MS", sans-serif;
+    margin: 0px;
+    padding: 5px 15px 5px;
+    background-color: #C4C5C6;
+    border-bottom: 2px solid #C4C5C6;
+    height: 25px;
+    cursor: pointer;
+}
+
+.buttonLeftOff a:hover
+{
+    color: #ffffff;
+    background-color: #888A8C;
+    border-bottom: 2px solid #888A8C;
+}
+
+.buttonLeftOn
+{
+    float: left;
+    font-size: .8em;
+    color: #000000;
+    font-family: DINWebBold, "Trebuchet MS", sans-serif;
+    margin: 0px 5px 0px 0px;
+    padding: 5px 15px 5px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    height: 25px;
+    cursor: default;
+}
+
+.buttonLeftOff
+{
+    float: left;
+    font-size: .8em;
+    margin: 0px 5px 0px 0px;
+    padding: 0px;
+    height: 25px;
+}
+
+.buttonRightOff a:link,.buttonRightOff a:visited
+{
+    float: right;
+    color: #777A7C;
+    text-decoration: none;
+    font-family: DINWebRegular, "Trebuchet MS", sans-serif;
+    margin: 0px;
+    padding: 5px 15px 5px;
+    background-color: #C4C5C6;
+    border-bottom: 2px solid #C4C5C6;
+    height: 25px;
+    cursor: pointer;
+}
+
+.buttonRightOff a:hover
+{
+    color: #ffffff;
+    background-color: #888A8C;
+    border-bottom: 2px solid #888A8C;
+}
+
+.buttonRightOn
+{
+    float: right;
+    font-size: .8em;
+    color: #000000;
+    font-family: DINWebBold, "Trebuchet MS", sans-serif;
+    margin: 0px 5px 0px 0px;
+    padding: 5px 15px 5px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    height: 25px;
+    cursor: default;
+}
+
+.buttonRightOff
+{
+    float: right;
+    font-size: .8em;
+    margin: 0px 5px 0px 0px;
+    padding: 0px;
+    height: 25px;
+}
+
+/* **** buttons for form interactions
+*/
+
+.toggleDiv
+{
+    display: none;
+}
+
+input.btn
+{
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    display: inline-block;
+    height: 18px;
+    font-size: .8em;
+    margin: 4px 0px 0px 0px;
+    padding: 1px 6px 1px 6px;
+    text-decoration: none;
+}
+
+select.dropDown
+{
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    display: inline-block;
+    height: 18px;
+    font-size: .8em;
+    margin: 4px 0px 0px 0px;
+    padding: 1px 6px 1px 6px;
+    text-decoration: none;
+}
+
+.alignRight
+{
+    float: right;
+}
+
+.Completed_Btn
+{
+    background-color: #77b55a;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #4b8f29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: DINWebBold, "Trebuchet MS", sans-serif;
+    font-size: .8em;
+    padding: 4px 12px;
+    text-decoration: none;
+}
+
+.Completed_Btn:hover
+{
+    background-color: #91DB6E;
+}
+
+.Completed_Btn:active
+{
+    position: relative;
+    top: 1px;
+}
+
+.Begin_Btn
+{
+    background-color: #f05a19;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #993b13;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 11px;
+    padding: 4px 12px;
+    text-decoration: none;
+}
+
+.Begin_Btn:hover
+{
+    background-color: #EFB075;
+}
+
+.Begin_Btn:active
+{
+    position: relative;
+    top: 1px;
+}
+
+.Started_Btn
+{
+    background-color: #7484de;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #041b9b;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 11px;
+    padding: 4px 12px;
+    text-decoration: none;
+}
+
+.Started_Btn:hover
+{
+    background-color: #C1D0FF;
+}
+
+.Started_Btn:active
+{
+    position: relative;
+    top: 1px;
+}
+
+.Closed_Btn
+{
+    background-color: #bbbbbb;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #aaaaaa;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 11px;
+    padding: 4px 12px;
+    text-decoration: none;
+}
+
+.Closed_Btn:hover
+{
+    background-color: #C1D0FF;
+}
+
+.Closed_Btn:active
+{
+    position: relative;
+    top: 1px;
+}
+
+/******
+toggle content areas start
+*****/
+
+#DRarr
+{
+    display: block;
+    margin: 10px 0px 10px 10px;
+    padding-left: 14px;
+    background-image: url(../art/doubleArrowOrange_right.png);
+    background-repeat: no-repeat;
+    background-position: 0px 6px;
+    -ms-background-position-x: 0px;
+    -ms-background-position-y: 3px;
+    background-size: 10px 10px;
+}
+
+#indentDRarr
+{
+    display: block;
+    margin: 0px 0px 0px 20px;
+    padding-left: 14px;
+    background-image: url(../art/doubleArrowOrange_right.png);
+    background-repeat: no-repeat;
+    background-position: 0px 6px;
+    -ms-background-position-x: 0px;
+    -ms-background-position-y: 3px;
+    background-size: 10px 10px;
+}
+
+.columnOne #indentDRarr a:link
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.columnOne #indentDRarr a:hover
+{
+    text-decoration: none;
+    color: #f47108;
+}
+
+.columnOne #indentDRarr a:visited
+{
+    text-decoration: none;
+    color: #666666;
+}
+
+.columnOne #DRarr span
+{
+    display: block;
+    margin-left: 15px;
+    font-size: .8em;
+}
+
+.columnOne .headerGray .head span
+{
+    display: inline;
+    margin-left: 0px;
+    font-size: .8em;
+}
+
+.columnOne .head span
+{
+    display: block;
+    margin-left: 0px;
+    font-size: .8em;
+}
+
+/******.columnOne h1.toggle + input{
+  display:none;
+}
+.columnOne h1.toggle + input + div{
+  display:none;
+}
+.columnOne h1.toggle+ input:checked + div{
+  display:block;
+}
+.columnOne h1.toggle strong{
+   	font-family:DINWebRegular "Trebuchet MS", sans-serif;
+}
+end toggle content areas
+*****/
+
+/******
+toggle content areas eval
+*****/
+
+.columnOne label.toggle
+{
+    display: block;
+    margin: 10px 0px 10px 10px;
+    padding-left: 12px;
+    background-image: url(../art/doubleArrowBlue_right.png);
+    background-repeat: no-repeat;
+    background-position: 0px 7px;
+    -ms-background-position-x: 0px;
+    -ms-background-position-y: 3px;
+    background-size: 8px 8px;
+    cursor: pointer;
+}
+
+.columnOne label.toggle + input
+{
+    display: none;
+}
+
+.columnOne label.toggle + input + div
+{
+    display: none;
+}
+
+.columnOne label.toggle+ input:checked + div
+{
+    display: block;
+}
+
+.columnOne label.toggle strong
+{
+    font-family: DINWebRegular, "Trebuchet MS", sans-serif;
+}
+
+.columnOne label.toggle + p, .columnOne label.toggle + p + div
+{
+    display: none;
+}
+
+/******
+end toggle content areas
+*****/
+
+/******
+form buttons
+*****/
+
+button
+{
+}
+
+hr.clear {
+	/*
+	border: 0;
+    size: 0;
+	padding: 0;
+	margin: 0;
+	*/
+	border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	background-position: 0px 25px;
+    margin-bottom 10px;
+    width: 100%;
+	clear: both;
+}
+
+hr.endClear
+{
+    clear: both;
+}
+
+hr.space
+{
+    border: 0;
+    size: 0;
+    padding: 0;
+    margin: 8px 0px 0px 0px;
+}
+
+footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #041a9b;
+    border-top: 1px solid #ffffff;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    clear: both;
+}
+
+footer .service
+{
+    margin: 0px auto 0px auto;
+    padding: 0px auto 0px auto;
+}
+
+footer span
+{
+    white-space: nowrap;
+    clear: both;
+}
+
+/********
+svg styles
+*********/
+
+svg.myBox
+{
+}
+
+svg.wrap
+{
+    height: 56px;
+    width: 900px;
+}
+
+text.myText
+{
+}
+
+text.Pre
+{
+}
+
+text.Mean
+{
+}
+
+text.SD
+{
+}
+
+text.Post
+{
+}
+
+rect.myOutline
+{
+}
+
+rect.mySolid
+{
+}
+
+/********
+end svg styles
+*********/
+
+/*print small screen design*/
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)
+{
+    main,.main
+    {
+        width: 90%;
+        max-width: 90%;
+        min-width: 90%;
+    }
+    .formPop
+    {
+        position: fixed;
+        width: 80%;
+        height: 80%;
+        top: 10%;
+        left: 10%;
+        margin: 0px auto 0px auto;
+        background-color: white;
+        overflow: auto;
+    }
+    nav
+    {
+        background-color: transparent;
+        width: 90%;
+        margin: 100px auto 0px auto;
+        padding: 0px;
+        height: 26px;
+    }
+    button
+    {
+        font-size: .4em;
+    }
+    .Started_Btn,.Completed_Btn,.Begin_Btn,.Closed_Btn
+    {
+        font-size: 16px;
+    }
+    .columnOne label.toggle
+    {
+        display: block;
+        margin: 10px 0px 10px 10px;
+        padding-left: 18px;
+        background-image: url(../art/doubleArrowBlue_right.png);
+        background-repeat: no-repeat;
+        background-position: 0px 6px;
+        background-size: 10px 10px;
+    }
+    .columnOne #DRarr
+    {
+        display: block;
+        margin: 10px 0px 10px 10px;
+        padding-left: 18px;
+        background-image: url(../art/doubleArrowOrange_right.png);
+        background-repeat: no-repeat;
+        background-position: 0px 6px;
+        background-size: 12px 12px;
+    }
+    svg.wrap
+    {
+        width: 100%;
+    }
+    text.myText
+    {
+    }
+    text.Pre
+    {
+        alignment-baseline: middle;
+    }
+    text.Mean
+    {
+        alignment-baseline: middle;
+    }
+    text.SD
+    {
+        alignment-baseline: middle;
+    }
+    text.Post
+    {
+        alignment-baseline: middle;
+    }
+    rect.myOutline
+    {
+    }
+    rect.mySolid
+    {
+    }
+footer {
+		/*
+		position: relative;		
+		margin: 0px auto 0px auto;
+		padding: 0px 10px 0px 10px;
+		*/
+		
+		position: fixed;
+		bottom: 0;
+		width:100%;
+		background-color: #041a9b;
+	
+		width: 100%;
+		max-width: 100%;
+		min-width: 100%;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px)
+{
+    body
+    {
+        font-size: 150%;
+    }
+    main,.main
+    {
+        width: 90%;
+        margin: 0px auto 0px auto;
+        max-width: 90%;
+        min-width: 90%;
+    }
+    figure
+    {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        height: 40px;
+        margin: 0px auto 0px auto;
+        padding: 10px 0px 14px 20px;
+        border: none;
+    }
+    .ubhead img
+    {
+        height: 90%;
+        width: 90%;
+    }
+    .formPop
+    {
+        position: fixed;
+        width: 80%;
+        height: 80%;
+        top: 10%;
+        left: 10%;
+        margin: 0px auto 0px auto;
+        background-color: white;
+        overflow: auto;
+    }
+    nav
+    {
+        width: 90%;
+        margin: 100px auto 0px auto;
+        height: 60px;
+    }
+    nav p
+    {
+        vertical-align: middle;
+        text-align: left;
+    }
+    nav span
+    {
+        height: 60px;
+    }
+    .buttonLeftOff
+    {
+        font-size: 1.2em;
+        height: 60px;
+        padding: 5px 15px 5px;
+        background-color: #C4C5C6;
+        border-bottom: 2px solid #C4C5C6;
+    }
+    .buttonLeftOn
+    {
+        font-size: 1.2em;
+        height: 60px;
+        padding: 5px 15px 5px;
+        background-color: #ffffff;
+        border-bottom: 2px solid #ffffff;
+    }
+    .buttonRightOff
+    {
+        font-size: 1.2em;
+        height: 60px;
+    }
+    .buttonRightOn
+    {
+        font-size: 1.2em;
+        height: 60px;
+    }
+    button
+    {
+        font-size: .8em;
+    }
+    input.btn
+    {
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        border: 1px solid #000000;
+        display: inline-block;
+        height: 30px;
+        font-size: 1em;
+        margin: 4px 0px 0px 0px;
+        padding: 4px 12px 4px 6px;
+        text-decoration: none;
+    }
+    select.dropDown
+    {
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        border: 1px solid #000000;
+        display: inline-block;
+        height: 30px;
+        font-size: 1em;
+        margin: 4px 0px 0px 0px;
+        padding: 4px 12px 4px 6px;
+        text-decoration: none;
+    }
+    .Started_Btn,.Completed_Btn,.Begin_Btn,.Closed_Btn
+    {
+        font-size: 26px;
+        margin: 4px 0px 0px 0px;
+    }
+    .columnOne label.toggle
+    {
+        display: block;
+        margin: 10px 0px 10px 10px;
+        padding-left: 28px;
+        background-image: url(../art/doubleArrowBlue_right.png);
+        background-repeat: no-repeat;
+        background-position: 0px 12px;
+        background-size: 20px 20px;
+    }
+    .columnOne #DRarr
+    {
+        display: block;
+        margin: 10px 0px 10px 10px;
+        padding-left: 28px;
+        background-image: url(../art/doubleArrowOrange_right.png);
+        background-repeat: no-repeat;
+        background-position: 0px 12px;
+        background-size: 24px 24px;
+    }
+    svg.wrap
+    {
+        width: 100%;
+    }
+    text.myText
+    {
+    }
+    text.Pre
+    {
+        alignment-baseline: middle;
+    }
+    text.Mean
+    {
+        alignment-baseline: middle;
+    }
+    text.SD
+    {
+        alignment-baseline: middle;
+    }
+    text.Post
+    {
+        alignment-baseline: middle;
+    }
+    rect.myOutline
+    {
+    }
+    rect.mySolid
+    {
+    }
+footer {
+		/*
+		position: relative;		
+		margin: 0px auto 0px auto;
+		padding: 0px 10px 0px 10px;
+		*/
+		
+		position: fixed;
+		bottom: 0;
+		width:100%;
+		background-color: #041a9b;
+	
+		width: 100%;
+		max-width: 100%;
+		min-width: 100%;
+	}
+}
+
+/*
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+	main,.main{
+		max-width: 970px;
+		min-width: 970px;
+		
+	}
+	.formPop{
+		position: fixed;
+		width: 80%;
+		height: 80%;
+		top: 10%;
+		left: 10%;
+		margin: 0px auto 0px auto;
+		background-color: white;
+		overflow: auto;
+	}
+	
+	nav{
+	background-color: green;
+	width: 100%;
+	margin:0px auto 0px auto;
+	padding: 0px;
+	height: 26px;
+	}
+}
+end print small screen design*/
+
+/*
+-
+-
+-
+-
+-print design
+-
+-*/
+
+@media print
+{
+    body
+    {
+        font-size: 150%;
+    }
+    p
+    {
+        font-size: .6em;
+    }
+    h1
+    {
+        font-size: .8em;
+    }
+    dl
+    {
+        font-size: .6em;
+    }
+    nav
+    {
+        display: none;
+    }
+    .main
+    {
+        margin: 50px auto 0px auto;
+    }
+/*header {
+		display: none;
+	}*/
+    .unitLogo
+    {
+        display: none;
+    }
+    .columnOne .linkTo
+    {
+        display: none;
+    }
+    footer
+    {
+        display: none;
+    }
+    body
+    {
+        background-image: none;
+    }
+    planning
+    {
+        background-image: none;
+    }
+    .breakHere
+    {
+        page-break-before: always;
+    }
+    .help
+    {
+        display: none;
+    }
+    [class$="Icon"]
+    {
+        display: none;
+    }
+    [class^="num"]
+    {
+        display: inline;
+    }
+    .Started_Btn,.Completed_Btn,.Begin_Btn,.Closed_Btn
+    {
+        display: none;
+    }
+    .formBack
+    {
+        display: none;
+        visibility: hidden;
+    }
+    .formPop
+    {
+        display: none;
+        visibility: hidden;
+    }
+    svg.wrap
+    {
+        width: 100%;
+        font-size: 1em;
+    }
+    text.myText
+    {
+    }
+    text.Pre
+    {
+        alignment-baseline: middle;
+    }
+    text.Mean
+    {
+        alignment-baseline: middle;
+    }
+    text.SD
+    {
+        alignment-baseline: middle;
+    }
+    text.Post
+    {
+        alignment-baseline: middle;
+    }
+    rect.myOutline
+    {
+    }
+    rect.mySolid
+    {
+    }
+}
+
+/*
+-
+-end print design
+-
+-
+-
+*/
+
+
