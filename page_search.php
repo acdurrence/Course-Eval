@@ -86,7 +86,7 @@ $subjects = $sub->fetchAll();
                     <div class="container-fluid">
                         <div class="col-sm-2">
                             <p class="logoBoldPositive">
-                                Select Search Type
+                                Select Type
                                 <br />
                                 <select id="selectSearch" class="dropDown">
                                     <option value="0" selected="selected">Instructor</option>
