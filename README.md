@@ -22,9 +22,9 @@ The website UI was made with html, css, javascript, bootstrap, jquery. Backend w
 ```
 Description: Retrieves all available subjects for dropbown and generates a webpage.
 
-Based on the user's selection from the dropdown, the page
+Based on the user's selection from the dropdown, the page makes
 
-makes an AJAX request to ajax.search.php to get all available courses.
+an AJAX request to ajax.search.php to get all available courses.
 ```
 
 - Filename: **ajax.search.php**
