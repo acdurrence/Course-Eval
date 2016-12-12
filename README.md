@@ -15,3 +15,26 @@ The web application is user friendly with concise simple tabs and icons to navig
 
 The website UI was made with html, css, javascript, bootstrap, jquery. Backend with Ubuntu, php, mysql. Data came from Thomas Slomka who is from the program accessment and data accessment reporting department of UB in csv files. In the future we have plan to add admin tools, user authentication and tracking, and make the layout more user friendly. 
 
+# Overview of PHP Scripts 
+
+- Filename: **page_search.php**
+
+Retrieves all available subjects for dropbown and generates a webpage.  Based on the user's selection from the dropdown, the page makes an AJAX request to ajax.search.php to get all available courses.
+
+- Filename: **ajax.search.php**
+
+Retrieves all of the available courses for a given subject.
+
+Parameters: action, searchType, subject
+
+- Filename: **page_course.php**
+
+Retrieves course data and displays it in a chart.
+
+Parameters: id
+
+- Filename: **data_accessor.php**
+
+A collection of php functions for retreiving course data from the database.
+
+- Additional php functions were made for retreiving instrutor data.  However, this code is currently incomplete.
