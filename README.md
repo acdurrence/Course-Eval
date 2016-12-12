@@ -48,5 +48,4 @@ Parameters: id
 ```
 A collection of php functions for retreiving course data from the database.
 ```
-
-- Additional php functions were made for retreiving instrutor data.  However, this code is currently incomplete.
+Additional php functions were made for retreiving instructor data.  However, this code is currently incomplete.
