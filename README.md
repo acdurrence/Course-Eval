@@ -20,17 +20,17 @@ The website UI was made with html, css, javascript, bootstrap, jquery. Backend w
 - Filename: **page_search.php**
 
 ```
-Retrieves all available subjects for dropbown and generates a webpage.
+Description: Retrieves all available subjects for dropbown and generates a webpage.
 
-Based on the user's selection from the dropdown,
+Based on the user's selection from the dropdown, the page
 
-the page makes an AJAX request to ajax.search.php to get all available courses.
+makes an AJAX request to ajax.search.php to get all available courses.
 ```
 
 - Filename: **ajax.search.php**
 
 ```
-Retrieves all of the available courses for a given subject.
+Description: Retrieves all of the available courses for a given subject.
 
 Parameters: action, searchType, subject
 ```
@@ -38,7 +38,7 @@ Parameters: action, searchType, subject
 - Filename: **page_course.php**
 
 ```
-Retrieves course data and displays it in a chart.
+Description: Retrieves course data and displays it in a chart.
 
 Parameters: id
 ```
@@ -46,6 +46,6 @@ Parameters: id
 - Filename: **data_accessor.php**
 
 ```
-A collection of php functions for retreiving course data from the database.
+Description: A collection of php functions for retreiving course data from the database.
 ```
 Additional php functions were made for retreiving instructor data.  However, this code is currently incomplete.
