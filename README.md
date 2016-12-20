@@ -49,3 +49,25 @@ Parameters: id
 Description: A collection of php functions for retreiving course data from the database.
 ```
 Additional php functions were made for retreiving instructor data.  However, this code is currently incomplete.
+
+...
+
+In folder **admin_tools** (designed to be used to house administrative tools, primarily for handling data). See the readme in the folder for further details.
+
+- Filename: **general.php**
+
+```
+Description: Provides a class to control all general functions for classes in the admin_tools folder. Currently houses a $pdo variable which creates a limited connection to the DB. All classes in this folder should extend general.
+```
+
+- Filename: **merge_script.php**
+
+```
+Description: Simple script to import locally stored csv files into the DB using the merge_data script. Use this script as a template if the mergeTools class is used as the order these functions are called in is important (assuming you are importing the same files I did).
+```
+
+- Filename: **merge_data.php**
+
+```
+Description: Provides functions to import data from csv files corresponding to the data to be entered into the DB. Notice it extends general. These functions provide the backend of any kind of interface that might be created to import data into the database automatically. They will never delete data, only add new records when a previous one does not exist. The only parameter these functions require is a file path string.
+```
